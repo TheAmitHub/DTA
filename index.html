@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -224,29 +223,35 @@
           <p>Before confirming, verify the recipient name and payment details shown in your app.</p>
         </div>
 
-        <!-- Mobile-only UPI options. The payment amount is intentionally not pre-filled. -->
+        <!-- Mobile & Tablet UPI options with Click to Contribute UI -->
         <div class="mobile-payment-options" aria-label="Mobile payment options">
           <div class="mobile-upi-details">
             <span class="upi-label">UPI ID</span>
             <strong id="mobileUpiId">plussoonee@oksbi</strong>
             <span class="mobile-payee-name" id="mobilePayeeName">Recipient: R. AMIT</span>
           </div>
-          <p class="mobile-payment-label">Or open your payment app</p>
+          
+          <div class="contrib-action-banner">
+            <span class="contrib-badge">Thank You!</span>
+            <p class="mobile-payment-label">⚡ Click to Contribute</p>
+          </div>
+
           <div class="mobile-payment-apps">
             <button class="mobile-payment-app" type="button" data-upi-app="gpay" aria-label="Pay using Google Pay">
-              <img src="GPay.webp" alt="" width="24" height="24" loading="lazy">
+              <img src="GPay.webp" alt="" width="44" height="44" loading="lazy">
               <span>Google Pay</span>
             </button>
             <button class="mobile-payment-app" type="button" data-upi-app="phonepe" aria-label="Pay using PhonePe">
-              <img src="PhonePe.webp" alt="" width="24" height="24" loading="lazy">
+              <img src="PhonePe.webp" alt="" width="44" height="44" loading="lazy">
               <span>PhonePe</span>
             </button>
             <button class="mobile-payment-app" type="button" data-upi-app="paytm" aria-label="Pay using Paytm">
-              <img src="Paytm.png" alt="" width="24" height="24" loading="lazy">
+              <img src="Paytm.png" alt="" width="44" height="44" loading="lazy">
               <span>Paytm</span>
             </button>
           </div>
-          <p class="mobile-payment-fallback">Enter the amount in your payment app and verify the recipient details before paying.</p>
+          
+          <p class="mobile-payment-fallback">Please verify the details before contributing. We do not track payment details here.</p>
         </div>
 
         <p class="small-note">
