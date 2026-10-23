@@ -1979,3 +1979,106 @@ body.dark-mode .mobile-payment-app {
   color: var(--text);
   border-color: var(--border);
 }
+
+.contrib-action-banner {
+  text-align: center;
+  margin: 14px 0 10px;
+  padding: 12px;
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-payment-label {
+  margin: 0;
+  color: var(--green-dark);
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+  width: 100%;
+}
+
+body.dark-mode .mobile-payment-label {
+  color: var(--green);
+}
+
+.contrib-footer-badge {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.contrib-badge-bottom {
+  background: var(--green);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 8px 24px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(35, 131, 77, 0.2);
+}
+/* ===== Final UI Spacing & QR Code Adjustment ===== */
+.qr-payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin: 12px 0;
+  padding: 12px 10px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg);
+  text-align: center;
+}
+
+.qr-payment h4 {
+  margin: 0 0 2px;
+  font-size: 13px;
+}
+
+.qr-payment img {
+  width: min(100%, 170px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.qr-payment p {
+  max-width: 270px;
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+
+.mobile-payment-options {
+  display: block;
+  margin-top: 14px;
+  padding-bottom: 10px;
+}
+
+.contrib-footer-badge {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.contrib-badge-bottom {
+  background: var(--green);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 9px 26px;
+  border-radius: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 6px 16px rgba(35, 131, 77, 0.22);
+}
