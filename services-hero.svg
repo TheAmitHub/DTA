@@ -1,0 +1,200 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" fill="none">
+  <defs>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#6D28D9"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#292044"/>
+      <stop offset="1" stop-color="#11101D"/>
+    </linearGradient>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EDE7FF"/>
+    </linearGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .float1 { animation: float 5s ease-in-out infinite; }
+      .float2 { animation: float 6s ease-in-out infinite 1s; }
+      .float3 { animation: float 4.5s ease-in-out infinite 2s; }
+      .orbit { transform-origin: 400px 300px; animation: rotate 30s linear infinite; }
+      .pulse { animation: pulse 3s ease-in-out infinite; }
+      @keyframes float {
+        0%,100% { transform: translateY(0); }
+        50% { transform: translateY(-13px); }
+      }
+      @keyframes rotate {
+        to { transform: rotate(360deg); }
+      }
+      @keyframes pulse {
+        0%,100% { opacity:.45; }
+        50% { opacity:1; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background atmosphere -->
+  <ellipse cx="400" cy="505" rx="260" ry="65"
+    fill="#8B5CF6" opacity=".10" filter="url(#shadow)"/>
+  <circle cx="400" cy="300" r="210"
+    stroke="#A78BFA" stroke-opacity=".18" stroke-dasharray="5 12"
+    class="orbit"/>
+  <circle cx="400" cy="300" r="175"
+    stroke="#8B5CF6" stroke-opacity=".13" stroke-dasharray="3 10"/>
+
+  <!-- Connection network -->
+  <g stroke="#A78BFA" stroke-width="1.5" stroke-dasharray="5 7" opacity=".7">
+    <path d="M400 275 L205 145"/>
+    <path d="M400 275 L615 145"/>
+    <path d="M400 330 L185 420"/>
+    <path d="M400 330 L620 430"/>
+    <path d="M400 275 L400 90"/>
+  </g>
+  <g fill="#8B5CF6" filter="url(#glow)" class="pulse">
+    <circle cx="205" cy="145" r="4"/>
+    <circle cx="615" cy="145" r="4"/>
+    <circle cx="185" cy="420" r="4"/>
+    <circle cx="620" cy="430" r="4"/>
+    <circle cx="400" cy="90" r="4"/>
+  </g>
+
+  <!-- Central 3D platform -->
+  <g class="float1">
+    <path d="M250 300 L400 215 L555 305 L400 395 Z"
+      fill="#6D28D9" opacity=".18"/>
+    <path d="M250 300 L400 385 L555 300 L555 340 L400 430 L250 345 Z"
+      fill="#4C1D95"/>
+    <path d="M250 300 L400 385 L400 430 L250 345 Z"
+      fill="#6D28D9"/>
+    <path d="M400 385 L555 300 L555 340 L400 430 Z"
+      fill="#321568"/>
+    <path d="M250 300 L400 215 L555 300 L400 385 Z"
+      fill="url(#surface)" stroke="#B9A0FF" stroke-width="2"/>
+
+    <!-- Dashboard body -->
+    <path d="M305 293 L400 240 L500 297 L400 352 Z"
+      fill="url(#dark)" stroke="#8B5CF6" stroke-width="1.5"/>
+    <path d="M305 293 L400 346 L500 297"
+      stroke="#A78BFA" stroke-opacity=".5"/>
+
+    <!-- Dashboard screen -->
+    <path d="M335 292 L400 256 L470 295 L400 332 Z"
+      fill="#211A35" stroke="#A78BFA" stroke-opacity=".5"/>
+    <path d="M355 293 L400 268 L451 297"
+      stroke="#A78BFA" stroke-width="4" stroke-linecap="round"/>
+    <path d="M355 303 L400 328 L451 299"
+      stroke="#7C3AED" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="400" cy="298" r="12" fill="url(#purple)"/>
+    <path d="M394 298 L399 303 L407 293"
+      stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- SEO card -->
+  <g class="float2">
+    <rect x="103" y="100" width="145" height="95" rx="15"
+      fill="#6D28D9" opacity=".18"/>
+    <rect x="100" y="91" width="145" height="95" rx="15"
+      fill="url(#surface)" stroke="#C4B5FD"/>
+    <circle cx="126" cy="120" r="14" fill="#E9DDFF"/>
+    <path d="M120 120 L125 125 L134 114"
+      stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M120 150 L137 150 M120 160 L161 160"
+      stroke="#A78BFA" stroke-width="5" stroke-linecap="round"/>
+    <text x="119" y="180" fill="#4C1D95" font-size="10" font-weight="bold">SEO &amp; GROWTH</text>
+  </g>
+
+  <!-- Web development card -->
+  <g class="float3">
+    <rect x="560" y="91" width="145" height="95" rx="15"
+      fill="#6D28D9" opacity=".18"/>
+    <rect x="557" y="82" width="145" height="95" rx="15"
+      fill="url(#surface)" stroke="#C4B5FD"/>
+    <rect x="578" y="103" width="48" height="32" rx="5"
+      fill="#2B2045"/>
+    <path d="M590 113 L584 119 L590 125 M604 113 L610 119 L604 125"
+      stroke="#C4B5FD" stroke-width="2" stroke-linecap="round"/>
+    <path d="M578 148 L627 148 M578 158 L614 158"
+      stroke="#A78BFA" stroke-width="4" stroke-linecap="round"/>
+    <text x="578" y="171" fill="#4C1D95" font-size="9" font-weight="bold">WEB DEVELOPMENT</text>
+  </g>
+
+  <!-- Social media card -->
+  <g class="float1">
+    <rect x="65" y="390" width="155" height="100" rx="15"
+      fill="#6D28D9" opacity=".18"/>
+    <rect x="62" y="381" width="155" height="100" rx="15"
+      fill="url(#surface)" stroke="#C4B5FD"/>
+    <circle cx="96" cy="414" r="15" fill="#E9DDFF"/>
+    <circle cx="91" cy="414" r="3" fill="#7C3AED"/>
+    <circle cx="101" cy="414" r="3" fill="#7C3AED"/>
+    <path d="M91 422 Q96 427 101 422" stroke="#7C3AED" stroke-width="2" fill="none"/>
+    <path d="M125 410 L191 410 M125 421 L176 421 M83 450 L190 450"
+      stroke="#A78BFA" stroke-width="4" stroke-linecap="round"/>
+    <text x="83" y="471" fill="#4C1D95" font-size="10" font-weight="bold">SOCIAL MEDIA</text>
+  </g>
+
+  <!-- Content writing card -->
+  <g class="float2">
+    <rect x="580" y="398" width="155" height="100" rx="15"
+      fill="#6D28D9" opacity=".18"/>
+    <rect x="577" y="389" width="155" height="100" rx="15"
+      fill="url(#surface)" stroke="#C4B5FD"/>
+    <path d="M603 410 L620 410 L620 435 L603 435 Z"
+      fill="#E9DDFF" stroke="#8B5CF6"/>
+    <path d="M608 418 L616 418 M608 424 L616 424 M608 430 L614 430"
+      stroke="#7C3AED" stroke-width="1.5"/>
+    <path d="M635 413 L710 413 M635 425 L699 425 M635 437 L708 437"
+      stroke="#A78BFA" stroke-width="4" stroke-linecap="round"/>
+    <text x="597" y="470" fill="#4C1D95" font-size="10" font-weight="bold">CONTENT WRITING</text>
+  </g>
+
+  <!-- Google business card -->
+  <g class="float3">
+    <rect x="328" y="30" width="145" height="83" rx="15"
+      fill="#6D28D9" opacity=".18"/>
+    <rect x="325" y="21" width="145" height="83" rx="15"
+      fill="url(#surface)" stroke="#C4B5FD"/>
+    <path d="M359 48 Q347 48 347 61 Q347 72 359 81 Q371 72 371 61 Q371 48 359 48Z"
+      fill="#8B5CF6"/>
+    <circle cx="359" cy="60" r="5" fill="white"/>
+    <path d="M387 51 L448 51 M387 62 L437 62 M387 73 L429 73"
+      stroke="#A78BFA" stroke-width="4" stroke-linecap="round"/>
+    <text x="343" y="94" fill="#4C1D95" font-size="9" font-weight="bold">GOOGLE BUSINESS</text>
+  </g>
+
+  <!-- Virtual assistant card -->
+  <g class="float1">
+    <rect x="328" y="505" width="145" height="83" rx="15"
+      fill="#6D28D9" opacity=".18"/>
+    <rect x="325" y="496" width="145" height="83" rx="15"
+      fill="url(#surface)" stroke="#C4B5FD"/>
+    <circle cx="357" cy="530" r="15" fill="#E9DDFF"/>
+    <circle cx="352" cy="527" r="2" fill="#7C3AED"/>
+    <circle cx="362" cy="527" r="2" fill="#7C3AED"/>
+    <path d="M352 535 Q357 541 362 535"
+      stroke="#7C3AED" stroke-width="2" fill="none"/>
+    <path d="M383 518 L450 518 M383 529 L440 529 M383 540 L449 540"
+      stroke="#A78BFA" stroke-width="4" stroke-linecap="round"/>
+    <text x="342" y="565" fill="#4C1D95" font-size="10" font-weight="bold">VIRTUAL ASSISTANT</text>
+  </g>
+
+  <!-- Decorative particles -->
+  <g fill="#8B5CF6" class="pulse">
+    <circle cx="270" cy="160" r="3"/>
+    <circle cx="530" cy="190" r="4"/>
+    <circle cx="270" cy="450" r="3"/>
+    <circle cx="535" cy="460" r="3"/>
+    <circle cx="480" cy="125" r="2"/>
+    <circle cx="300" cy="520" r="2"/>
+  </g>
+</svg>

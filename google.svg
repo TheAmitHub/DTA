@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" width="100%" height="100%">
+  <defs>
+    <!-- Background Slate -->
+    <linearGradient id="gmbBgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#161224"/>
+      <stop offset="100%" stop-color="#0c0816"/>
+    </linearGradient>
+
+    <!-- Deep Ambient Purple Glow -->
+    <filter id="gmbGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#8b5cf6" flood-opacity="0.36"/>
+    </filter>
+
+    <!-- Smartphone / Border Gradient -->
+    <linearGradient id="gmbBorder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+
+    <!-- Verified Badge Gradient -->
+    <linearGradient id="badgeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Dark Canvas -->
+  <rect width="760" height="480" rx="28" fill="url(#gmbBgGrad)"/>
+  <rect width="760" height="480" rx="28" fill="none" stroke="#2a203b" stroke-width="2"/>
+
+  <!-- ================= LEFT COLUMN: GMB CORE PILLARS ================= -->
+  <g filter="url(#gmbGlow)">
+    <!-- 1. GMB PROFILE SETUP -->
+    <g transform="translate(42, 65)">
+      <rect width="175" height="74" rx="18" fill="#140f21" stroke="#3b2b54" stroke-width="1.5"/>
+      <rect x="18" y="19" width="36" height="36" rx="10" fill="#2d1747" stroke="#a855f7" stroke-width="1.5"/>
+      <!-- Storefront Icon with G -->
+      <path d="M26 31 L46 31 L48 37 L24 37 Z" fill="#c084fc"/>
+      <rect x="26" y="37" width="20" height="12" fill="none" stroke="#c084fc" stroke-width="1.3"/>
+      <rect x="33" y="41" width="6" height="8" fill="#8b5cf6"/>
+      <text x="68" y="36" fill="#ffffff" font-size="12" font-weight="700" font-family="system-ui, sans-serif">GMB Setup</text>
+      <text x="68" y="50" fill="#c084fc" font-size="10" font-weight="600" font-family="system-ui, sans-serif">Profile Creation</text>
+    </g>
+
+    <!-- 2. GOOGLE MAP SEO -->
+    <g transform="translate(42, 150)">
+      <rect width="175" height="74" rx="18" fill="#140f21" stroke="#3b2b54" stroke-width="1.5"/>
+      <rect x="18" y="19" width="36" height="36" rx="10" fill="#241938" stroke="#8b5cf6" stroke-width="1.5"/>
+      <!-- Map Pin with Growth Arrow -->
+      <path d="M36 25 C32 25 29 28 29 32 C29 37 36 44 36 44 C36 44 43 37 43 32 C43 28 40 25 36 25 Z" fill="none" stroke="#a855f7" stroke-width="1.5"/>
+      <circle cx="36" cy="32" r="2.5" fill="#f43f5e"/>
+      <path d="M41 40 L49 32 M44 32 L49 32 L49 37" stroke="#10b981" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="68" y="36" fill="#ffffff" font-size="12" font-weight="700" font-family="system-ui, sans-serif">Map SEO</text>
+      <text x="68" y="50" fill="#a855f7" font-size="10" font-weight="600" font-family="system-ui, sans-serif">Local 3-Pack Ranking</text>
+    </g>
+
+    <!-- 3. REVIEW MANAGEMENT -->
+    <g transform="translate(42, 235)">
+      <rect width="175" height="74" rx="18" fill="#140f21" stroke="#3b2b54" stroke-width="1.5"/>
+      <rect x="18" y="19" width="36" height="36" rx="10" fill="#1e1830" stroke="#8b5cf6" stroke-width="1.5"/>
+      <!-- Chat Bubble with 5-Stars -->
+      <rect x="25" y="27" width="22" height="16" rx="4" fill="none" stroke="#f59e0b" stroke-width="1.4"/>
+      <polygon points="30,43 30,47 35,43" fill="#f59e0b"/>
+      <text x="36" y="38" fill="#fbbf24" font-size="8" font-weight="900" font-family="system-ui, sans-serif" text-anchor="middle">★★★★★</text>
+      <text x="68" y="36" fill="#ffffff" font-size="12" font-weight="700" font-family="system-ui, sans-serif">Reviews</text>
+      <text x="68" y="50" fill="#fbbf24" font-size="10" font-weight="600" font-family="system-ui, sans-serif">Reputation &amp; Trust</text>
+    </g>
+
+    <!-- 4. BUSINESS CALL OPTIMIZATION -->
+    <g transform="translate(42, 320)">
+      <rect width="175" height="74" rx="18" fill="#140f21" stroke="#3b2b54" stroke-width="1.5"/>
+      <rect x="18" y="19" width="36" height="36" rx="10" fill="#2d1747" stroke="#38bdf8" stroke-width="1.5"/>
+      <!-- Phone Call Target Icon -->
+      <path d="M29 30 C29 38 35 44 43 44 L45 40 L41 37 L39 39 C36 37 35 36 33 33 L35 31 L32 27 Z" fill="#38bdf8"/>
+      <circle cx="43" cy="27" r="3" fill="none" stroke="#38bdf8" stroke-width="1.2"/>
+      <text x="68" y="36" fill="#ffffff" font-size="12" font-weight="700" font-family="system-ui, sans-serif">Direct Calls</text>
+      <text x="68" y="50" fill="#38bdf8" font-size="10" font-weight="600" font-family="system-ui, sans-serif">Lead Conversion</text>
+    </g>
+  </g>
+
+  <!-- ================= CENTER: GOOGLE MAPS MOBILE BUSINESS INTERFACE ================= -->
+  <g filter="url(#gmbGlow)">
+    <!-- Smartphone Frame -->
+    <rect x="260" y="50" width="220" height="350" rx="30" fill="#110d1a" stroke="url(#gmbBorder)" stroke-width="2.4"/>
+    
+    <!-- Top Notch -->
+    <rect x="330" y="58" width="80" height="6" rx="3" fill="#251a38"/>
+
+    <!-- Map View Area (Top 40% of Phone) -->
+    <g clip-path="url(#mapClip)">
+      <clipPath id="mapClip">
+        <rect x="262" y="70" width="216" height="135" rx="0"/>
+      </clipPath>
+      <rect x="262" y="70" width="216" height="135" fill="#181326"/>
+      <!-- Grid Roads on Map -->
+      <path d="M260 110 L480 110" stroke="#2c2042" stroke-width="8"/>
+      <path d="M330 70 L330 205" stroke="#2c2042" stroke-width="8"/>
+      <path d="M410 70 L410 205" stroke="#2c2042" stroke-width="6"/>
+      <path d="M260 165 L480 165" stroke="#2c2042" stroke-width="6"/>
+      <!-- Route path highlight -->
+      <path d="M330 110 L410 110 L410 165" fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Big Google Map Pin -->
+      <path d="M370 95 C363 95 358 100 358 107 C358 116 370 128 370 128 C370 128 382 116 382 107 C382 100 377 95 370 95 Z" fill="#ea4335"/>
+      <circle cx="370" cy="107" r="4" fill="#ffffff"/>
+    </g>
+
+    <!-- Business Profile Details Card inside Mobile -->
+    <g transform="translate(275, 215)">
+      <!-- Verified Tick Badge -->
+      <circle cx="15" cy="15" r="9" fill="url(#badgeGrad)"/>
+      <path d="M12 15 L14 17 L18 13" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+      
+      <text x="32" y="16" fill="#ffffff" font-size="13" font-weight="800" font-family="system-ui, sans-serif">DTA Agency</text>
+      <text x="32" y="27" fill="#fbbf24" font-size="9" font-weight="700" font-family="system-ui, sans-serif">4.9 ★★★★★ (120+ Reviews)</text>
+      <text x="32" y="38" fill="#a855f7" font-size="9" font-weight="500" font-family="system-ui, sans-serif">Digital Marketing &amp; Web Agency</text>
+
+      <!-- Action Buttons Row: Call, Direction, Website -->
+      <g transform="translate(0, 48)">
+        <!-- Call Button (Highlighted) -->
+        <rect x="0" y="0" width="60" height="26" rx="8" fill="#2563eb"/>
+        <text x="30" y="16" fill="#ffffff" font-size="9" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">📞 Call</text>
+
+        <!-- Directions Button -->
+        <rect x="66" y="0" width="64" height="26" rx="8" fill="#1f1730" stroke="#3b2b54" stroke-width="1"/>
+        <text x="98" y="16" fill="#c084fc" font-size="9" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">📍 Directions</text>
+
+        <!-- Website Button -->
+        <rect x="136" y="0" width="54" height="26" rx="8" fill="#1f1730" stroke="#3b2b54" stroke-width="1"/>
+        <text x="163" y="16" fill="#c084fc" font-size="9" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">🌐 Site</text>
+      </g>
+
+      <!-- Overview Stats Strip inside Phone -->
+      <rect x="0" y="86" width="190" height="42" rx="10" fill="#191226" stroke="#35264c" stroke-width="1"/>
+      <text x="12" y="103" fill="#10b981" font-size="11" font-weight="800" font-family="system-ui, sans-serif">+480%</text>
+      <text x="12" y="117" fill="#8b5cf6" font-size="8" font-family="system-ui, sans-serif">Discovery Searches</text>
+      <line x1="95" y1="92" x2="95" y2="122" stroke="#2f2244" stroke-width="1"/>
+      <text x="108" y="103" fill="#38bdf8" font-size="11" font-weight="800" font-family="system-ui, sans-serif">#1 Local</text>
+      <text x="108" y="117" fill="#8b5cf6" font-size="8" font-family="system-ui, sans-serif">Google Maps Rank</text>
+    </g>
+
+    <!-- Bottom Home Bar -->
+    <rect x="330" y="388" width="80" height="4" rx="2" fill="#4c386b"/>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: VERIFIED SHIELD & STRATEGY CHECKLIST ================= -->
+  <g filter="url(#gmbGlow)">
+    <!-- 3D Blue Verified Shield & Megaphone Widget -->
+    <g transform="translate(540, 65)">
+      <rect width="175" height="150" rx="18" fill="#140f21" stroke="#3b2b54" stroke-width="1.5"/>
+      <!-- Big Blue Verified Seal -->
+      <polygon points="87,32 98,36 107,32 113,41 123,43 124,54 133,60 129,70 134,80 126,87 126,98 116,100 110,110 100,107 90,113 83,105 72,107 68,97 58,93 60,82 53,74 58,64 54,54 64,49 67,39 77,39" fill="url(#badgeGrad)"/>
+      <path d="M78 72 L86 80 L106 60" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="87" y="132" fill="#38bdf8" font-size="11" font-weight="800" font-family="system-ui, sans-serif" text-anchor="middle">GOOGLE VERIFIED</text>
+    </g>
+
+    <!-- Checklist: Verify, Optimize, Rank, Scale -->
+    <g transform="translate(540, 230)">
+      <rect width="175" height="164" rx="18" fill="#140f21" stroke="#3b2b54" stroke-width="1.5"/>
+      <text x="24" y="32" fill="#c084fc" font-size="12" font-weight="800" font-family="system-ui, sans-serif">GMB ROADMAP</text>
+
+      <!-- Step 1: Verify -->
+      <circle cx="34" cy="56" r="6" fill="#231636" stroke="#10b981" stroke-width="1.5"/>
+      <path d="M31 56 L33 58 L37 54" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="50" y="60" fill="#f3e8ff" font-size="11" font-weight="600" font-family="system-ui, sans-serif">Instant Verify</text>
+
+      <!-- Step 2: Optimize -->
+      <circle cx="34" cy="84" r="6" fill="#231636" stroke="#10b981" stroke-width="1.5"/>
+      <path d="M31 84 L33 86 L37 82" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="50" y="88" fill="#f3e8ff" font-size="11" font-weight="600" font-family="system-ui, sans-serif">Optimize Categories</text>
+
+      <!-- Step 3: Rank -->
+      <circle cx="34" cy="112" r="6" fill="#231636" stroke="#10b981" stroke-width="1.5"/>
+      <path d="M31 112 L33 114 L37 110" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="50" y="116" fill="#f3e8ff" font-size="11" font-weight="600" font-family="system-ui, sans-serif">Map 3-Pack Rank</text>
+
+      <!-- Step 4: Scale -->
+      <circle cx="34" cy="140" r="6" fill="#231636" stroke="#38bdf8" stroke-width="1.5"/>
+      <path d="M31 140 L33 142 L37 138" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="50" y="144" fill="#38bdf8" font-size="11" font-weight="600" font-family="system-ui, sans-serif">Max Customer Calls</text>
+    </g>
+  </g>
+</svg>

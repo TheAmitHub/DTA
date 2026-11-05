@@ -1,0 +1,106 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" fill="none">
+  <defs>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#A855F7"/>
+      <stop offset="1" stop-color="#5B21B6"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F1E8FF"/>
+    </linearGradient>
+    <linearGradient id="mail" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#9333EA"/>
+      <stop offset="1" stop-color="#4C1D95"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#6B21A8" flood-opacity=".18"/>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+  </defs>
+
+  <!-- Background glow -->
+  <ellipse cx="325" cy="280" rx="220" ry="180" fill="#DCC5FF" opacity=".35" filter="url(#soft)"/>
+  <circle cx="320" cy="260" r="190" stroke="#C4A3F5" stroke-width="1.5" stroke-dasharray="5 10" opacity=".65"/>
+
+  <!-- Orbit dots -->
+  <g fill="#9333EA">
+    <circle cx="130" cy="150" r="6"/>
+    <circle cx="490" cy="105" r="5"/>
+    <circle cx="525" cy="340" r="7"/>
+    <circle cx="160" cy="390" r="4"/>
+  </g>
+
+  <!-- Floating chat bubble -->
+  <g class="chat" filter="url(#shadow)">
+    <rect x="80" y="125" width="142" height="94" rx="22" fill="url(#card)"/>
+    <path d="M112 219L105 239L137 219" fill="#F1E8FF"/>
+    <circle cx="112" cy="169" r="7" fill="#A855F7"/>
+    <rect x="128" y="162" width="65" height="8" rx="4" fill="#C4B5FD"/>
+    <rect x="105" y="185" width="88" height="7" rx="3.5" fill="#DDD0F5"/>
+  </g>
+
+  <!-- Main email card -->
+  <g class="main-card" filter="url(#shadow)">
+    <rect x="174" y="135" width="310" height="260" rx="30" fill="url(#card)" stroke="#E9D5FF" stroke-width="2"/>
+    <rect x="198" y="160" width="262" height="48" rx="14" fill="#F3E8FF"/>
+    <circle cx="222" cy="184" r="10" fill="url(#purple)"/>
+    <path d="M217 181L222 185L227 181" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="242" y="179" width="100" height="9" rx="4.5" fill="#A78BFA"/>
+
+    <!-- Envelope -->
+    <rect x="220" y="230" width="218" height="130" rx="18" fill="url(#mail)"/>
+    <path d="M220 245L329 325L438 245" stroke="#E9D5FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M220 345L294 285M438 345L364 285" stroke="#C084FC" stroke-width="4" stroke-linecap="round"/>
+    <path d="M220 245L329 325L438 245" fill="#7E22CE" opacity=".35"/>
+    <circle cx="329" cy="296" r="20" fill="#FFFFFF" opacity=".15"/>
+    <path d="M320 296L326 302L338 288" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Phone notification -->
+  <g class="phone" filter="url(#shadow)">
+    <rect x="450" y="205" width="105" height="130" rx="22" fill="white"/>
+    <rect x="461" y="218" width="83" height="104" rx="14" fill="#F5EEFF"/>
+    <circle cx="502" cy="242" r="13" fill="url(#purple)"/>
+    <path d="M497 242H507M502 237V247" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="475" y="265" width="54" height="6" rx="3" fill="#A78BFA"/>
+    <rect x="481" y="278" width="42" height="5" rx="2.5" fill="#D8B4FE"/>
+    <rect x="486" y="294" width="32" height="5" rx="2.5" fill="#D8B4FE"/>
+  </g>
+
+  <!-- Paper plane -->
+  <g class="plane">
+    <path d="M420 85L545 43L505 155L480 111L420 85Z" fill="url(#purple)" filter="url(#shadow)"/>
+    <path d="M420 85L480 111L545 43" stroke="#E9D5FF" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M480 111L475 137L505 155" fill="#6B21A8"/>
+  </g>
+
+  <!-- Small sparkle -->
+  <g fill="#A855F7">
+    <path d="M112 295L119 316L140 323L119 330L112 351L105 330L84 323L105 316Z"/>
+    <path d="M525 390L530 405L545 410L530 415L525 430L520 415L505 410L520 405Z"/>
+    <path d="M300 65L305 80L320 85L305 90L300 105L295 90L280 85L295 80Z"/>
+  </g>
+
+  <!-- Bottom floating dots -->
+  <circle cx="250" cy="430" r="8" fill="#C084FC"/>
+  <circle cx="390" cy="445" r="5" fill="#9333EA"/>
+  <circle cx="460" cy="410" r="4" fill="#C084FC"/>
+
+  <style>
+    .main-card { animation: float 4s ease-in-out infinite; transform-origin: center; }
+    .chat { animation: float 4.5s ease-in-out infinite -1s; }
+    .phone { animation: float 4s ease-in-out infinite -2s; }
+    .plane { animation: fly 5s ease-in-out infinite; transform-origin: center; }
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+    @keyframes fly {
+      0%,100% { transform: translate(0,0) rotate(0deg); }
+      50% { transform: translate(7px,-12px) rotate(3deg); }
+    }
+  </style>
+</svg>

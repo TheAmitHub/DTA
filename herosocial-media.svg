@@ -1,0 +1,131 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" fill="none">
+<defs>
+  <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#B66AFF"/><stop offset="1" stop-color="#5B21B6"/>
+  </linearGradient>
+  <linearGradient id="fb" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#60A5FA"/><stop offset="1" stop-color="#1877F2"/>
+  </linearGradient>
+  <linearGradient id="ig" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#F9CE34"/><stop offset=".5" stop-color="#EE2A7B"/><stop offset="1" stop-color="#6228D7"/>
+  </linearGradient>
+  <linearGradient id="wa" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#4ADE80"/><stop offset="1" stop-color="#16A34A"/>
+  </linearGradient>
+  <linearGradient id="ms" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#60A5FA"/><stop offset="1" stop-color="#7C3AED"/>
+  </linearGradient>
+  <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#F1E8FF"/>
+  </linearGradient>
+  <filter id="shadow" x="-40%" y="-40%" width="180%" height="190%">
+    <feDropShadow dx="0" dy="13" stdDeviation="12" flood-color="#55218A" flood-opacity=".2"/>
+  </filter>
+  <filter id="glow"><feGaussianBlur stdDeviation="15"/></filter>
+</defs>
+
+<!-- Background -->
+<ellipse cx="320" cy="270" rx="230" ry="190" fill="#DCC5FF" opacity=".35" filter="url(#glow)"/>
+<circle cx="320" cy="260" r="205" stroke="#C4A3F5" stroke-dasharray="5 10" opacity=".6"/>
+
+<!-- Orbit dots -->
+<g fill="#9333EA">
+  <circle cx="115" cy="150" r="5"/>
+  <circle cx="515" cy="115" r="6"/>
+  <circle cx="530" cy="365" r="5"/>
+  <circle cx="135" cy="395" r="4"/>
+</g>
+
+<!-- Central social media dashboard -->
+<g class="dashboard" filter="url(#shadow)">
+  <rect x="150" y="130" width="340" height="260" rx="25" fill="#2E1065"/>
+  <rect x="162" y="142" width="316" height="236" rx="16" fill="url(#screen)"/>
+
+  <!-- Header -->
+  <rect x="180" y="160" width="280" height="42" rx="12" fill="#F1E8FF"/>
+  <circle cx="201" cy="181" r="10" fill="url(#purple)"/>
+  <path d="M196 181L200 185L207 176" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <text x="220" y="185" font-size="12" font-weight="700" fill="#4C1D95">SOCIAL MEDIA OVERVIEW</text>
+
+  <!-- Analytics card -->
+  <rect x="180" y="215" width="280" height="145" rx="12" fill="white"/>
+  <text x="197" y="238" font-size="11" font-weight="700" fill="#4C1D95">Audience Engagement</text>
+  <text x="197" y="263" font-size="22" font-weight="700" fill="#7E22CE">+38.6%</text>
+  <text x="285" y="261" font-size="9" fill="#16A34A">Growing reach</text>
+
+  <!-- Chart -->
+  <path d="M198 330L225 311L251 317L280 286L307 297L334 272L363 282L390 253L433 264"
+        stroke="#9333EA" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M198 330L225 311L251 317L280 286L307 297L334 272L363 282L390 253L433 264L433 343L198 343Z"
+        fill="#C4B5FD" opacity=".18"/>
+  <path d="M198 343H440" stroke="#E9D5FF" stroke-width="1.5"/>
+</g>
+
+<!-- Facebook icon -->
+<g class="facebook" filter="url(#shadow)">
+  <circle cx="115" cy="205" r="43" fill="url(#fb)"/>
+  <path d="M125 180H115Q105 180 105 192V200H96V212H105V237H119V212H129L131 200H119V193Q119 190 123 190H130V180Z"
+        fill="white"/>
+</g>
+
+<!-- Instagram icon -->
+<g class="instagram" filter="url(#shadow)">
+  <rect x="465" y="65" width="82" height="82" rx="24" fill="url(#ig)"/>
+  <rect x="484" y="84" width="44" height="44" rx="13" stroke="white" stroke-width="5"/>
+  <circle cx="506" cy="106" r="10" stroke="white" stroke-width="5"/>
+  <circle cx="520" cy="92" r="3.5" fill="white"/>
+</g>
+
+<!-- WhatsApp icon -->
+<g class="whatsapp" filter="url(#shadow)">
+  <circle cx="520" cy="320" r="42" fill="url(#wa)"/>
+  <path d="M499 344L503 331Q494 316 505 303Q517 289 532 298Q548 307 542 324Q536 342 517 342Q510 342 505 339Z"
+        fill="white"/>
+  <path d="M512 307Q509 305 507 309Q503 316 514 328Q525 339 532 331Q535 328 531 325L525 322L521 326Q515 324 512 317L515 313Z"
+        fill="#16A34A"/>
+</g>
+
+<!-- Messenger icon -->
+<g class="messenger" filter="url(#shadow)">
+  <circle cx="110" cy="365" r="39" fill="url(#ms)"/>
+  <path d="M89 365Q89 344 111 344Q132 344 132 363Q132 383 112 383Q106 383 101 380L91 385L94 374Q89 370 89 365Z" fill="white"/>
+  <path d="M99 369L109 358L116 364L125 358L115 372L108 366Z" fill="#7C3AED"/>
+</g>
+
+<!-- Floating notification card -->
+<g class="notification" filter="url(#shadow)">
+  <rect x="415" y="175" width="145" height="70" rx="16" fill="white"/>
+  <circle cx="438" cy="199" r="11" fill="#FCE7F3"/>
+  <path d="M434 199Q438 192 442 199Q438 207 434 199Z" fill="#EC4899"/>
+  <rect x="457" y="194" width="83" height="7" rx="3.5" fill="#C4B5FD"/>
+  <rect x="433" y="220" width="105" height="6" rx="3" fill="#E9D5FF"/>
+</g>
+
+<!-- Floating like reaction -->
+<g class="like" filter="url(#shadow)">
+  <circle cx="310" cy="85" r="27" fill="#FFFFFF"/>
+  <path d="M310 104L295 91Q283 77 298 68Q306 64 310 74Q316 64 325 68Q338 77 325 91Z" fill="#EC4899"/>
+</g>
+
+<!-- Sparkles -->
+<g fill="#9333EA">
+  <path d="M220 65L226 83L244 89L226 95L220 113L214 95L196 89L214 83Z"/>
+  <path d="M575 275L580 289L594 294L580 299L575 313L570 299L556 294L570 289Z"/>
+  <path d="M250 430L255 443L268 448L255 453L250 466L245 453L232 448L245 443Z"/>
+</g>
+
+<style>
+.dashboard { animation: float 4.5s ease-in-out infinite; transform-origin:center; }
+.facebook { animation: float 4s ease-in-out infinite -1s; }
+.instagram { animation: float 4.5s ease-in-out infinite -2s; }
+.whatsapp { animation: float 4s ease-in-out infinite -1.5s; }
+.messenger { animation: float 4.5s ease-in-out infinite -.5s; }
+.notification { animation: float 4s ease-in-out infinite -2.5s; }
+.like { animation: float 3.8s ease-in-out infinite -1s; }
+@keyframes float {
+  0%,100% { transform:translateY(0) rotate(0); }
+  50% { transform:translateY(-11px) rotate(2deg); }
+}
+</style>
+</svg>

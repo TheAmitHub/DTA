@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" fill="none">
+  <defs>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#B68AFF"/>
+      <stop offset="1" stop-color="#7138D8"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EEE8FF"/>
+    </linearGradient>
+    <radialGradient id="orb">
+      <stop stop-color="#D9C4FF"/>
+      <stop offset=".55" stop-color="#9560EC"/>
+      <stop offset="1" stop-color="#6332C7"/>
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12"/>
+      <feOffset dy="12"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".17"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <style>
+    .float1 { animation: float 5s ease-in-out infinite; }
+    .float2 { animation: float 6s ease-in-out infinite reverse; }
+    .float3 { animation: float 4.5s ease-in-out infinite 1s; }
+    .orbit { transform-origin: 360px 250px; animation: rotate 22s linear infinite; }
+    .pulse { animation: pulse 3s ease-in-out infinite; }
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+    @keyframes rotate {
+      to { transform: rotate(360deg); }
+    }
+    @keyframes pulse {
+      0%,100% { opacity:.55; }
+      50% { opacity:1; }
+    }
+  </style>
+
+  <!-- Ambient background -->
+  <ellipse cx="360" cy="420" rx="235" ry="34" fill="#9060E8" opacity=".10" filter="url(#glow)"/>
+
+  <!-- Orbit -->
+  <g class="orbit">
+    <ellipse cx="360" cy="250" rx="245" ry="105"
+      stroke="#A77AE9" stroke-width="1.5" stroke-dasharray="5 10" opacity=".4"/>
+    <circle cx="115" cy="250" r="6" fill="#A77AE9"/>
+    <circle cx="605" cy="250" r="6" fill="#9560EC"/>
+  </g>
+
+  <!-- Central glowing sphere -->
+  <g class="pulse">
+    <circle cx="360" cy="250" r="115" fill="#9560EC" opacity=".10" filter="url(#glow)"/>
+  </g>
+  <g filter="url(#shadow)">
+    <circle cx="360" cy="250" r="88" fill="url(#orb)"/>
+    <path d="M307 220 Q360 169 413 220" stroke="#E8D9FF" stroke-width="2" opacity=".5"/>
+    <path d="M307 280 Q360 330 413 280" stroke="#E8D9FF" stroke-width="2" opacity=".35"/>
+    <path d="M360 162 Q405 250 360 338 Q315 250 360 162Z"
+      stroke="#E8D9FF" stroke-width="1.5" opacity=".35"/>
+    <circle cx="360" cy="250" r="48" fill="#FFFFFF" opacity=".13"/>
+    <path d="M337 225 H383 Q390 225 390 233 V273 Q390 281 383 281 H337 Q330 281 330 273 V233 Q330 225 337 225Z"
+      fill="url(#card)"/>
+    <path d="M341 239 H378 M341 249 H378 M341 259 H368"
+      stroke="#7545C6" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="380" cy="269" r="5" fill="#A27AE9"/>
+  </g>
+
+  <!-- Left floating article card -->
+  <g class="float1" filter="url(#shadow)">
+    <rect x="92" y="120" width="165" height="190" rx="17" fill="url(#card)"/>
+    <rect x="108" y="137" width="133" height="77" rx="10" fill="#E6D9FF"/>
+    <rect x="120" y="150" width="42" height="42" rx="12" fill="url(#purple)"/>
+    <path d="M130 180 L141 160 L153 180" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="108" y="229" width="93" height="7" rx="3.5" fill="#7851C4"/>
+    <rect x="108" y="244" width="126" height="5" rx="2.5" fill="#C5B7DF"/>
+    <rect x="108" y="256" width="108" height="5" rx="2.5" fill="#C5B7DF"/>
+    <rect x="108" y="277" width="55" height="17" rx="8.5" fill="#E5D8FF"/>
+    <circle cx="118" cy="285" r="3" fill="#8250D7"/>
+  </g>
+
+  <!-- Right analytics card -->
+  <g class="float2" filter="url(#shadow)">
+    <rect x="465" y="155" width="160" height="150" rx="17" fill="url(#card)"/>
+    <text x="482" y="181" font-size="12" font-weight="700" fill="#6542A4">INSIGHTS</text>
+    <rect x="482" y="193" width="126" height="1.5" fill="#D9CDEB"/>
+    <path d="M486 267 L510 244 L533 253 L558 215 L584 228 L605 207"
+      stroke="#8A50DB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M486 267 L510 244 L533 253 L558 215 L584 228 L605 207 V276 H486Z"
+      fill="#A77AE9" opacity=".13"/>
+    <circle cx="558" cy="215" r="5" fill="#8A50DB"/>
+    <rect x="482" y="284" width="42" height="5" rx="2.5" fill="#C4B5DE"/>
+    <rect x="532" y="284" width="70" height="5" rx="2.5" fill="#C4B5DE"/>
+  </g>
+
+  <!-- Top notification -->
+  <g class="float3" filter="url(#shadow)">
+    <rect x="335" y="65" width="104" height="53" rx="14" fill="white"/>
+    <circle cx="360" cy="91" r="13" fill="#E8DBFF"/>
+    <path d="M354 92 L359 97 L367 86" stroke="#7746CC" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="380" y="85" width="42" height="5" rx="2.5" fill="#9A7BC8"/>
+    <rect x="380" y="96" width="29" height="4" rx="2" fill="#D0C4E4"/>
+  </g>
+
+  <!-- Bottom content tile -->
+  <g class="float1" filter="url(#shadow)">
+    <rect x="272" y="380" width="173" height="83" rx="16" fill="url(#card)"/>
+    <circle cx="303" cy="414" r="18" fill="#E5D7FF"/>
+    <path d="M296 408 H310 M296 414 H310 M296 420 H306"
+      stroke="#7545C6" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="333" y="402" width="92" height="6" rx="3" fill="#7952BC"/>
+    <rect x="333" y="416" width="75" height="5" rx="2.5" fill="#C6B8DC"/>
+    <rect x="333" y="428" width="86" height="5" rx="2.5" fill="#C6B8DC"/>
+  </g>
+
+  <!-- Decorative particles -->
+  <g fill="#A477E9">
+    <circle cx="75" cy="205" r="4"/>
+    <circle cx="647" cy="355" r="5"/>
+    <circle cx="282" cy="83" r="4"/>
+    <circle cx="464" cy="370" r="3"/>
+    <circle cx="165" cy="365" r="3"/>
+  </g>
+  <g stroke="#A477E9" stroke-width="2" stroke-linecap="round" opacity=".7">
+    <path d="M557 95 V111 M549 103 H565"/>
+    <path d="M220 342 V358 M212 350 H228"/>
+    <path d="M630 125 V137 M624 131 H636"/>
+  </g>
+</svg>

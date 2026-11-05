@@ -1,0 +1,380 @@
+/* Homepage-only refinement. Other pages and Insights are intentionally untouched. */
+:root {
+  --p-bg: #e9ecef !important;
+  --p-surface: #ffffff !important;
+  --p-surface-2: #f2efff;
+  --p-text: #211b31;
+  --p-muted: #716b7f;
+  --p-purple: #6d3bd1;
+  --p-purple-2: #8c68e8;
+  --p-line: rgba(76,53,120,.13);
+  --p-shadow: 0 24px 70px rgba(54,35,91,.09);
+}
+body.premium-site {
+  background-color: #e9ecef !important;
+  color: #211b31;
+}
+.premium-hero{min-height:0;min-height:clamp(570px,calc(100svh - 78px),760px);padding:clamp(42px,5.2vw,76px) clamp(24px,6vw,88px);grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(28px,4vw,60px);align-items:center}
+.premium-hero-copy{max-width:620px}.premium-hero h1{font-size:clamp(46px,4.5vw,64px);line-height:1.06;letter-spacing:-.065em;margin:17px 0 18px;max-width:650px}.premium-hero-copy>p{font-size:clamp(15px,1.18vw,17px);line-height:1.75;max-width:560px;margin:0}.hero-actions{margin-top:25px;gap:13px}.hero-proof{margin-top:32px;gap:clamp(12px,1.5vw,22px);padding-top:17px}.hero-proof span{font-size:11px}.premium-hero-video{width:100%;max-width:560px;justify-self:end;position:relative;min-height:0;aspect-ratio:1.22/1;border-radius:28px;overflow:hidden;background:#e9e1f8;box-shadow:0 28px 75px rgba(53,34,91,.17);isolation:isolate}.hero-intro-video{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.hero-video-caption{position:absolute;left:18px;right:18px;bottom:16px;padding:12px 16px;border:1px solid rgba(255,255,255,.3);border-radius:13px;background:rgba(26,18,42,.62);backdrop-filter:blur(12px);color:#fff;font-size:12px;font-weight:700;letter-spacing:.02em}.premium-strip{display:block;overflow:hidden;padding:0;background:var(--p-purple);color:#fff;white-space:nowrap}.service-marquee-track{display:flex;width:max-content;animation:dta-marquee 28s linear infinite}.service-marquee-group{display:flex;align-items:center;flex-shrink:0;min-height:64px}.service-marquee-item{display:inline-flex;align-items:center;gap:34px;padding:0 34px;font-size:12px;letter-spacing:.13em;font-weight:800;color:#fff}.service-marquee-item i{font-style:normal;color:#e0d3ff;font-size:17px}.premium-strip:hover .service-marquee-track{animation-play-state:paused}@keyframes dta-marquee{to{transform:translateX(-50%)}}
+.p-about-visual{min-height:360px;position:relative;overflow:hidden;border-radius:26px;background:#e9e1f8;box-shadow:var(--p-shadow)}.p-about-visual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.about-note{position:absolute;left:20px;bottom:20px;max-width:calc(100% - 40px);padding:13px 17px;border-radius:13px;background:rgba(255,255,255,.92);color:#302344;font-size:12px;font-weight:800;box-shadow:0 12px 35px rgba(25,16,42,.12);backdrop-filter:blur(10px)}
+.p-team .p-section-head{align-items:end}.team-profile-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.2vw,30px);align-items:stretch}.team-profile-card{display:flex;flex-direction:column;overflow:hidden;border:1px solid rgba(76,53,120,.12);border-radius:22px;background:#fff;box-shadow:0 14px 42px rgba(54,35,91,.07);transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}.team-profile-card:hover{transform:translateY(-7px);border-color:rgba(109,59,209,.35);box-shadow:0 24px 55px rgba(54,35,91,.14)}.team-profile-photo{height:clamp(230px,27vw,340px);position:relative;overflow:hidden;background:#eee8fa}.team-profile-photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .55s ease}.team-profile-card:hover .team-profile-photo img{transform:scale(1.045)}.team-profile-index{position:absolute;top:15px;left:15px;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.92);color:var(--p-purple);font-size:11px;font-weight:800}.team-profile-info{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}.team-profile-info>span{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--p-purple);font-weight:800}.team-profile-info h3{font-size:21px;line-height:1.25;letter-spacing:-.035em;margin:8px 0}.team-profile-info p{font-size:13px;line-height:1.7;color:var(--p-muted);margin:0 0 18px;min-height:66px}.team-profile-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:15px;border-top:1px solid var(--p-line)}.profile-link-placeholder{display:inline-flex;align-items:center;gap:7px;padding:8px 10px;border:1px solid var(--p-line);border-radius:9px;background:#fff;color:#403452;font-size:10px;font-weight:800;cursor:pointer;transition:background .2s,color .2s,border-color .2s}.profile-link-placeholder:hover{background:var(--p-purple);color:#fff;border-color:var(--p-purple)}.profile-link-placeholder svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.profile-link-placeholder span{white-space:nowrap}.profile-link-note{position:fixed;z-index:2000;left:50%;bottom:24px;transform:translate(-50%,12px);padding:11px 16px;border-radius:999px;background:#211b31;color:#fff;font-size:12px;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.2);opacity:0;pointer-events:none;transition:.22s}.profile-link-note.is-active{opacity:1;transform:translate(-50%,0)}
+@media(max-width:1050px){.premium-hero{min-height:0;padding-top:60px;padding-bottom:60px;grid-template-columns:1fr 1fr}.premium-hero h1{font-size:clamp(43px,5.2vw,56px)}.premium-hero-video{aspect-ratio:1/1.08}.team-profile-photo{height:260px}.team-profile-info{padding:18px}.team-profile-info h3{font-size:18px}.team-profile-info p{font-size:12px}}
+@media(max-width:760px){.premium-hero{grid-template-columns:1fr;min-height:0;padding:58px 22px 45px;gap:27px}.premium-hero h1{font-size:clamp(43px,10.5vw,60px);margin:16px 0}.premium-hero-copy>p{font-size:14px}.hero-proof{margin-top:27px}.premium-hero-video{justify-self:stretch;max-width:none;aspect-ratio:16/10;border-radius:20px}.hero-video-caption{font-size:10px;bottom:11px;left:11px;right:11px}.service-marquee-group{min-height:54px}.service-marquee-item{font-size:10px;gap:18px;padding:0 18px}.p-about-visual{min-height:260px}.about-note{font-size:10px;left:13px;bottom:13px}.team-profile-grid{grid-template-columns:1fr;gap:16px}.team-profile-card{display:grid;grid-template-columns:minmax(112px,36%) 1fr;min-height:0}.team-profile-photo{height:100%;min-height:225px}.team-profile-info{padding:16px 14px}.team-profile-info h3{font-size:16px}.team-profile-info p{font-size:11px;min-height:0;margin-bottom:12px}.team-profile-links{gap:6px;padding-top:10px}.profile-link-placeholder{padding:7px 8px;font-size:9px}.profile-link-placeholder span{display:none}.profile-link-placeholder svg{width:17px;height:17px}}
+@media(max-width:390px){.team-profile-card{grid-template-columns:105px 1fr}.team-profile-photo{min-height:220px}.team-profile-info{padding:13px 11px}.team-profile-info h3{font-size:14px}.team-profile-info p{font-size:10px}.team-profile-links{gap:5px}.profile-link-placeholder{padding:6px}}
+@media(prefers-reduced-motion:reduce){.service-marquee-track{animation:none}.team-profile-card,.team-profile-photo img{transition:none}}
+.premium-hero {
+  padding-top: clamp(20px, 3vw, 40px) !important; /* Top gap ko kam karne ke liye */
+}
+
+/* Sections ko balanced transparent gray shade dene ke liye */
+.premium-hero,
+.p-section,
+.p-about-band,
+.p-process-section,
+.p-market,
+.p-team,
+.p-insights,
+.p-faq {
+  background-color: rgba(235, 238, 242, 0.9) !important;
+}
+
+/* Cards aur Process boxes ko sharp white rakhne ke liye taaki visible rahein */
+.p-service-card,
+.ss-card,
+.market-card,
+.team-profile-card,
+.process-step,
+.p-process .process-step,
+.insight-video-card,
+.faq-list details {
+  background-color: #ffffff !important;
+  border-color: rgba(109, 40, 217, 0.15) !important;
+}
+
+/* Marquee / Loop strip ko apni original purple theme mein maintain rakhne ke liye */
+.premium-strip {
+  background-color: var(--p-purple, #6d28d9) !important;
+}
+.premium-strip .service-marquee-item {
+  color: #ffffff !important;
+}
+
+.premium-hero{min-height:0;min-height:clamp(570px,calc(100svh - 78px),760px);padding:clamp(20px,3vw,40px) clamp(24px,6vw,88px);grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(28px,4vw,60px);align-items:center}
+.premium-hero-copy{max-width:620px}.premium-hero h1{font-size:clamp(46px,4.5vw,64px);line-height:1.06;letter-spacing:-.065em;margin:17px 0 18px;max-width:650px}.premium-hero-copy>p{font-size:clamp(15px,1.18vw,17px);line-height:1.75;max-width:560px;margin:0}.hero-actions{margin-top:25px;gap:13px}.hero-proof{margin-top:32px;gap:clamp(12px,1.5vw,22px);padding-top:17px}.hero-proof span{font-size:11px}.premium-hero-video{width:100%;max-width:560px;justify-self:end;position:relative;min-height:0;aspect-ratio:1.22/1;border-radius:28px;overflow:hidden;background:#e9e1f8;box-shadow:0 28px 75px rgba(53,34,91,.17);isolation:isolate}.hero-intro-video{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.hero-video-caption{position:absolute;left:18px;right:18px;bottom:16px;padding:12px 16px;border:1px solid rgba(255,255,255,.3);border-radius:13px;background:rgba(26,18,42,.62);backdrop-filter:blur(12px);color:#fff;font-size:12px;font-weight:700;letter-spacing:.02em}.service-marquee-track{display:flex;width:max-content;animation:dta-marquee 28s linear infinite}.service-marquee-group{display:flex;align-items:center;flex-shrink:0;min-height:64px}.service-marquee-item{display:inline-flex;align-items:center;gap:34px;padding:0 34px;font-size:12px;letter-spacing:.13em;font-weight:800;color:#fff}.service-marquee-item i{font-style:normal;color:#e0d3ff;font-size:17px}.premium-strip:hover .service-marquee-track{animation-play-state:paused}@keyframes dta-marquee{to{transform:translateX(-50%)}}
+.p-about-visual{min-height:360px;position:relative;overflow:hidden;border-radius:26px;background:#e9e1f8;box-shadow:var(--p-shadow)}.p-about-visual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.about-note{position:absolute;left:20px;bottom:20px;max-width:calc(100% - 40px);padding:13px 17px;border-radius:13px;background:rgba(255,255,255,.92);color:#302344;font-size:12px;font-weight:800;box-shadow:0 12px 35px rgba(25,16,42,.12);backdrop-filter:blur(10px)}
+.p-team .p-section-head{align-items:end}.team-profile-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.2vw,30px);align-items:stretch}.team-profile-card{display:flex;flex-direction:column;overflow:hidden;border:1px solid rgba(76,53,120,.12);border-radius:22px;background:#fff;box-shadow:0 14px 42px rgba(54,35,91,.07);transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}.team-profile-card:hover{transform:translateY(-7px);border-color:rgba(109,59,209,.35);box-shadow:0 24px 55px rgba(54,35,91,.14)}.team-profile-photo{height:clamp(230px,27vw,340px);position:relative;overflow:hidden;background:#eee8fa}.team-profile-photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .55s ease}.team-profile-card:hover .team-profile-photo img{transform:scale(1.045)}.team-profile-index{position:absolute;top:15px;left:15px;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.92);color:var(--p-purple);font-size:11px;font-weight:800}.team-profile-info{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}.team-profile-info>span{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--p-purple);font-weight:800}.team-profile-info h3{font-size:21px;line-height:1.25;letter-spacing:-.035em;margin:8px 0}.team-profile-info p{font-size:13px;line-height:1.7;color:var(--p-muted);margin:0 0 18px;min-height:66px}.team-profile-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:15px;border-top:1px solid var(--p-line)}.profile-link-placeholder{display:inline-flex;align-items:center;gap:7px;padding:8px 10px;border:1px solid var(--p-line);border-radius:9px;background:#fff;color:#403452;font-size:10px;font-weight:800;cursor:pointer;transition:background .2s,color .2s,border-color .2s}.profile-link-placeholder:hover{background:var(--p-purple);color:#fff;border-color:var(--p-purple)}.profile-link-placeholder svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.profile-link-placeholder span{white-space:nowrap}.profile-link-note{position:fixed;z-index:2000;left:50%;bottom:24px;transform:translate(-50%,12px);padding:11px 16px;border-radius:999px;background:#211b31;color:#fff;font-size:12px;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.2);opacity:0;pointer-events:none;transition:.22s}.profile-link-note.is-active{opacity:1;transform:translate(-50%,0)}
+@media(max-width:1050px){.premium-hero{min-height:0;padding-top:60px;padding-bottom:60px;grid-template-columns:1fr 1fr}.premium-hero h1{font-size:clamp(43px,5.2vw,56px)}.premium-hero-video{aspect-ratio:1/1.08}.team-profile-photo{height:260px}.team-profile-info{padding:18px}.team-profile-info h3{font-size:18px}.team-profile-info p{font-size:12px}}
+@media(max-width:760px){.premium-hero{grid-template-columns:1fr;min-height:0;padding:58px 22px 45px;gap:27px}.premium-hero h1{font-size:clamp(43px,10.5vw,60px);margin:16px 0}.premium-hero-copy>p{font-size:14px}.hero-proof{margin-top:27px}.premium-hero-video{justify-self:stretch;max-width:none;aspect-ratio:16/10;border-radius:20px}.hero-video-caption{font-size:10px;bottom:11px;left:11px;right:11px}.service-marquee-group{min-height:54px}.service-marquee-item{font-size:10px;gap:18px;padding:0 18px}.p-about-visual{min-height:260px}.about-note{font-size:10px;left:13px;bottom:13px}.team-profile-grid{grid-template-columns:1fr;gap:16px}.team-profile-card{display:grid;grid-template-columns:minmax(112px,36%) 1fr;min-height:0}.team-profile-photo{height:100%;min-height:225px}.team-profile-info{padding:16px 14px}.team-profile-info h3{font-size:16px}.team-profile-info p{font-size:11px;min-height:0;margin-bottom:12px}.team-profile-links{gap:6px;padding-top:10px}.profile-link-placeholder{padding:7px 8px;font-size:9px}.profile-link-placeholder span{display:none}.profile-link-placeholder svg{width:17px;height:17px}}
+@media(max-width:390px){.team-profile-card{grid-template-columns:105px 1fr}.team-profile-photo{min-height:220px}.team-profile-info{padding:13px 11px}.team-profile-info h3{font-size:14px}.team-profile-info p{font-size:10px}.team-profile-links{gap:5px}.profile-link-placeholder{padding:6px}}
+@media(prefers-reduced-motion:reduce){.service-marquee-track{animation:none}.team-profile-card,.team-profile-photo img{transition:none}}
+
+/* Homepage-only refinement. Other pages and Insights are intentionally untouched. */
+:root {
+  --p-bg: #e9ecef !important;
+  --p-surface: #ffffff !important;
+  --p-surface-2: #f2efff;
+  --p-text: #211b31;
+  --p-muted: #716b7f;
+  --p-purple: #6d3bd1;
+  --p-purple-2: #8c68e8;
+  --p-line: rgba(76,53,120,.13);
+  --p-shadow: 0 24px 70px rgba(54,35,91,.09);
+}
+body.premium-site {
+  background-color: #e9ecef !important;
+  color: #211b31;
+}
+.premium-hero{min-height:0;min-height:clamp(570px,calc(100svh - 78px),760px);padding:clamp(42px,5.2vw,76px) clamp(24px,6vw,88px);grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(28px,4vw,60px);align-items:center}
+.premium-hero-copy{max-width:620px}.premium-hero h1{font-size:clamp(46px,4.5vw,64px);line-height:1.06;letter-spacing:-.065em;margin:17px 0 18px;max-width:650px}.premium-hero-copy>p{font-size:clamp(15px,1.18vw,17px);line-height:1.75;max-width:560px;margin:0}.hero-actions{margin-top:25px;gap:13px}.hero-proof{margin-top:32px;gap:clamp(12px,1.5vw,22px);padding-top:17px}.hero-proof span{font-size:11px}.premium-hero-video{width:100%;max-width:560px;justify-self:end;position:relative;min-height:0;aspect-ratio:1.22/1;border-radius:28px;overflow:hidden;background:#e9e1f8;box-shadow:0 28px 75px rgba(53,34,91,.17);isolation:isolate}.hero-intro-video{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.hero-video-caption{position:absolute;left:18px;right:18px;bottom:16px;padding:12px 16px;border:1px solid rgba(255,255,255,.3);border-radius:13px;background:rgba(26,18,42,.62);backdrop-filter:blur(12px);color:#fff;font-size:12px;font-weight:700;letter-spacing:.02em}.premium-strip{display:block;overflow:hidden;padding:0;background:var(--p-purple);color:#fff;white-space:nowrap}.service-marquee-track{display:flex;width:max-content;animation:dta-marquee 28s linear infinite}.service-marquee-group{display:flex;align-items:center;flex-shrink:0;min-height:64px}.service-marquee-item{display:inline-flex;align-items:center;gap:34px;padding:0 34px;font-size:12px;letter-spacing:.13em;font-weight:800;color:#fff}.service-marquee-item i{font-style:normal;color:#e0d3ff;font-size:17px}.premium-strip:hover .service-marquee-track{animation-play-state:paused}@keyframes dta-marquee{to{transform:translateX(-50%)}}
+.p-about-visual{min-height:360px;position:relative;overflow:hidden;border-radius:26px;background:#e9e1f8;box-shadow:var(--p-shadow)}.p-about-visual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.about-note{position:absolute;left:20px;bottom:20px;max-width:calc(100% - 40px);padding:13px 17px;border-radius:13px;background:rgba(255,255,255,.92);color:#302344;font-size:12px;font-weight:800;box-shadow:0 12px 35px rgba(25,16,42,.12);backdrop-filter:blur(10px)}
+
+/* TEAM SECTION ENHANCEMENTS & CENTER CARD PROMINENCE */
+.p-team .p-section-head{align-items:end}
+.team-profile-grid{
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: clamp(16px, 2.2vw, 30px);
+  align-items: start; /* Changed from stretch so center card can be taller */
+  padding-top: 20px;
+}
+.team-profile-card{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(76,53,120,.12);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 14px 42px rgba(54,35,91,.07);
+  transition: transform .35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow .35s ease, border-color .35s ease, filter .35s ease;
+}
+
+/* Interactive Hover & Scroll Blur Effect for non-hovered cards */
+.team-profile-grid:hover .team-profile-card:not(:hover) {
+  filter: blur(1.5px) brightness(0.96);
+  transform: scale(0.98);
+}
+
+.team-profile-card:hover{
+  transform: translateY(-10px) scale(1.02);
+  border-color: rgba(109,59,209,.35);
+  box-shadow: 0 28px 65px rgba(54,35,91,.18);
+  filter: blur(0px);
+}
+
+/* CENTER CARD PROMINENCE (Kapil Bhatt) - Taller & Elevated */
+.team-profile-grid .team-profile-card:nth-child(2) {
+  transform: translateY(-22px);
+  border-color: rgba(109, 59, 209, 0.3);
+  box-shadow: 0 24px 60px rgba(109, 59, 209, 0.16);
+}
+.team-profile-grid .team-profile-card:nth-child(2):hover {
+  transform: translateY(-32px) scale(1.02);
+}
+
+.team-profile-photo{
+  height: clamp(240px, 28vw, 350px);
+  position: relative;
+  overflow: hidden;
+  background: #eee8fa;
+}
+
+/* Center card photo made taller from top */
+.team-profile-grid .team-profile-card:nth-child(2) .team-profile-photo {
+  height: clamp(290px, 33vw, 410px);
+}
+
+.team-profile-photo img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%; /* Ensures face and head are perfectly framed */
+  transition: transform .6s cubic-bezier(0.16, 1, 0.3, 1), filter .4s ease;
+}
+.team-profile-card:hover .team-profile-photo img{
+  transform: scale(1.06);
+}
+
+.team-profile-index{position:absolute;top:15px;left:15px;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.92);color:var(--p-purple);font-size:11px;font-weight:800}
+.team-profile-info{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.team-profile-info>span{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--p-purple);font-weight:800}
+.team-profile-info h3{font-size:21px;line-height:1.25;letter-spacing:-.035em;margin:8px 0}
+.team-profile-info p{font-size:13px;line-height:1.7;color:var(--p-muted);margin:0 0 18px;min-height:66px}
+.team-profile-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:15px;border-top:1px solid var(--p-line)}
+.profile-link-placeholder{display:inline-flex;align-items:center;gap:7px;padding:8px 10px;border:1px solid var(--p-line);border-radius:9px;background:#fff;color:#403452;font-size:10px;font-weight:800;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.profile-link-placeholder:hover{background:var(--p-purple);color:#fff;border-color:var(--p-purple)}
+.profile-link-placeholder svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.profile-link-placeholder span{white-space:nowrap}
+.profile-link-note{position:fixed;z-index:2000;left:50%;bottom:24px;transform:translate(-50%,12px);padding:11px 16px;border-radius:999px;background:#211b31;color:#fff;font-size:12px;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.2);opacity:0;pointer-events:none;transition:.22s}
+.profile-link-note.is-active{opacity:1;transform:translate(-50%,0)}
+
+@media(max-width:1050px){.premium-hero{min-height:0;padding-top:60px;padding-bottom:60px;grid-template-columns:1fr 1fr}.premium-hero h1{font-size:clamp(43px,5.2vw,56px)}.premium-hero-video{aspect-ratio:1/1.08}.team-profile-photo{height:260px}.team-profile-info{padding:18px}.team-profile-info h3{font-size:18px}.team-profile-info p{font-size:12px}}
+@media(max-width:760px){.premium-hero{grid-template-columns:1fr;min-height:0;padding:58px 22px 45px;gap:27px}.premium-hero h1{font-size:clamp(43px,10.5vw,60px);margin:16px 0}.premium-hero-copy>p{font-size:14px}.hero-proof{margin-top:27px}.premium-hero-video{justify-self:stretch;max-width:none;aspect-ratio:16/10;border-radius:20px}.hero-video-caption{font-size:10px;bottom:11px;left:11px;right:11px}.service-marquee-group{min-height:54px}.service-marquee-item{font-size:10px;gap:18px;padding:0 18px}.p-about-visual{min-height:260px}.about-note{font-size:10px;left:13px;bottom:13px}.team-profile-grid{grid-template-columns:1fr;gap:20px}.team-profile-card, .team-profile-grid .team-profile-card:nth-child(2){transform:none !important}.team-profile-photo{height:260px}.team-profile-info{padding:16px 14px}.team-profile-info h3{font-size:16px}.team-profile-info p{font-size:11px;min-height:0;margin-bottom:12px}.team-profile-links{gap:6px;padding-top:10px}.profile-link-placeholder{padding:7px 8px;font-size:9px}.profile-link-placeholder span{display:none}.profile-link-placeholder svg{width:17px;height:17px}}
+@media(max-width:390px){.team-profile-card{grid-template-columns:105px 1fr}.team-profile-photo{min-height:220px}.team-profile-info{padding:13px 11px}.team-profile-info h3{font-size:14px}.team-profile-info p{font-size:10px}.team-profile-links{gap:5px}.profile-link-placeholder{padding:6px}}
+@media(prefers-reduced-motion:reduce){.service-marquee-track{animation:none}.team-profile-card,.team-profile-photo img{transition:none}}
+.premium-hero {
+  padding-top: clamp(20px, 3vw, 40px) !important;
+}
+/* ========================================================
+   TEAM SECTION - EQUAL BOTTOMS, NO BLUR & CENTER PROMINENCE
+   ======================================================== */
+
+.team-profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(16px, 2.2vw, 30px);
+  align-items: stretch; /* Teeno cards ki height bottom se bilkul equal */
+  padding-top: 40px;
+}
+
+.team-profile-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(76, 53, 120, 0.12);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 14px 42px rgba(54, 35, 91, 0.07);
+  transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+}
+
+/* Hover par koi blur nahi, sirf smooth elevation */
+.team-profile-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(109, 59, 209, 0.35);
+  box-shadow: 0 24px 55px rgba(54, 35, 91, 0.14);
+}
+
+/* CENTER CARD PROMINENCE: Top se bada/elevated lekin bottom baaki cards ke sath perfectly aligned */
+.team-profile-grid .team-profile-card:nth-child(2) {
+  margin-top: -30px; /* Top se bada dikhane ke liye upar pull kiya */
+  border-color: rgba(109, 59, 209, 0.3);
+  box-shadow: 0 26px 60px rgba(109, 59, 209, 0.16);
+}
+
+.team-profile-grid .team-profile-card:nth-child(2):hover {
+  transform: translateY(-7px);
+}
+
+.team-profile-photo {
+  height: clamp(230px, 27vw, 320px);
+  position: relative;
+  overflow: hidden;
+  background: #eee8fa;
+}
+
+/* Center card ki image area ko thoda aur spacious banaya hai */
+.team-profile-grid .team-profile-card:nth-child(2) .team-profile-photo {
+  height: clamp(280px, 32vw, 380px);
+}
+
+.team-profile-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  transition: transform .55s ease;
+}
+
+.team-profile-card:hover .team-profile-photo img {
+  transform: scale(1.045);
+}
+
+.team-profile-info {
+  padding: 22px 22px 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.team-profile-info > span {
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--p-purple);
+  font-weight: 800;
+}
+
+.team-profile-info h3 {
+  font-size: 21px;
+  line-height: 1.25;
+  letter-spacing: -.035em;
+  margin: 8px 0;
+}
+
+.team-profile-info p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--p-muted);
+  margin: 0 0 18px;
+  flex-grow: 1; /* Content size alag hone par bhi button bottom par bilkul equal align rahega */
+}
+
+/* Clean Single LinkedIn Button Styling */
+.team-profile-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid var(--p-line);
+}
+
+.profile-link-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border: 1px solid rgba(10, 102, 194, 0.25);
+  border-radius: 9px;
+  background: #ffffff;
+  color: #0a66c2;
+  font-size: 11px;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  width: 100%;
+  justify-content: center;
+}
+
+.profile-link-linkedin:hover {
+  background: #0a66c2;
+  color: #ffffff;
+  border-color: #0a66c2;
+  box-shadow: 0 4px 12px rgba(10, 102, 194, 0.25);
+}
+
+.profile-link-linkedin svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* =========================================================
+   TEAM SECTION: REMOVE BLUR & FIX MOBILE SINGLE-STACK SEQUENCE
+   ========================================================= */
+
+/* 1. Blur effect ko poori tarah hatane ke liye */
+.team-profile-grid:hover .team-profile-card:not(:hover) {
+  filter: none !important;
+  transform: none !important;
+}
+
+@media (max-width: 760px) {
+  /* 2. Mobile view me cards ek sath grid me na dikh kar ek-ek karke niche aayein */
+  .team-profile-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+
+
+  /* Mobile par card ka layout full width single column clean dikhe */
+  .team-profile-card {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .team-profile-photo {
+    height: 280px !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 760px) {
+  /* Mobile view me cards ek sath grid me na dikh kar ek-ek karke niche aayein */
+  .team-profile-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+  /* Mobile ke liye exact sequence: 
+     1st: Amit Rana (3rd card in HTML)
+     2nd: Harish Bhatt (2nd card in HTML)
+     3rd: Kapil Bhatt (1st card in HTML) */
+  .team-profile-card:nth-child(1) {
+    order: 3 !important; /* Kapil Bhatt - 3rd position */
+  }
+  .team-profile-card:nth-child(2) {
+    order: 2 !important; /* Harish Bhatt - 2nd position */
+  }
+  .team-profile-card:nth-child(3) {
+    order: 1 !important; /* Amit Rana - 1st position */
+  }
+
+  /* Mobile par card ka layout full width single column clean dikhe */
+  .team-profile-card {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .team-profile-photo {
+    height: 280px !important;
+    width: 100% !important;
+  }
+}

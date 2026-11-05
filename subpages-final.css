@@ -1,0 +1,140 @@
+/* DTA final subpage theme: scoped only to service detail pages and Insights. */
+body.dta-subpage-theme {
+  background: #e9ecef !important;
+  background-color: #e9ecef !important;
+  color: #211b31;
+  overflow-x: clip;
+}
+body.dta-subpage-theme main,
+body.dta-subpage-theme .ss-hero,
+body.dta-subpage-theme .ss-intro,
+body.dta-subpage-theme .ss-services,
+body.dta-subpage-theme .ss-benefits,
+body.dta-subpage-theme .ss-process,
+body.dta-subpage-theme .va-hero,
+body.dta-subpage-theme .va-intro,
+body.dta-subpage-theme .va-services,
+body.dta-subpage-theme .va-benefits,
+body.dta-subpage-theme .va-process,
+body.dta-subpage-theme .web-showcase,
+body.dta-subpage-theme .insights-v2,
+body.dta-subpage-theme .iv-video-section {
+  background-color: transparent;
+}
+
+/* White surfaces keep text and illustrations clear against the shared grey body. */
+body.dta-subpage-theme .ss-card,
+body.dta-subpage-theme .ss-benefit-box,
+body.dta-subpage-theme .ss-mini-proof,
+body.dta-subpage-theme .ss-timeline,
+body.dta-subpage-theme .va-service-card,
+body.dta-subpage-theme .va-benefit-box,
+body.dta-subpage-theme .va-mini-proof,
+body.dta-subpage-theme .va-timeline,
+body.dta-subpage-theme .web-type,
+body.dta-subpage-theme .web-platforms,
+body.dta-subpage-theme .platform,
+body.dta-subpage-theme .iv-video-card,
+body.dta-subpage-theme .iv-agency-panel,
+body.dta-subpage-theme .iv-info-panel,
+body.dta-subpage-theme .iv-agency-intro,
+body.dta-subpage-theme .about-note {
+  background-color: #fff;
+}
+
+body.dta-subpage-theme .ss-card,
+body.dta-subpage-theme .ss-benefit-box,
+body.dta-subpage-theme .va-service-card,
+body.dta-subpage-theme .va-benefit-box,
+body.dta-subpage-theme .iv-video-card {
+  border-color: rgba(91, 33, 182, .10);
+}
+
+body.dta-subpage-theme img,
+body.dta-subpage-theme svg {
+  max-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  body.dta-subpage-theme { min-width: 320px; }
+  body.dta-subpage-theme main { width: 100%; max-width: 100%; }
+  body.dta-subpage-theme .ss-hero,
+  body.dta-subpage-theme .ss-intro,
+  body.dta-subpage-theme .ss-services,
+  body.dta-subpage-theme .ss-benefits,
+  body.dta-subpage-theme .ss-process,
+  body.dta-subpage-theme .va-hero,
+  body.dta-subpage-theme .va-intro,
+  body.dta-subpage-theme .va-services,
+  body.dta-subpage-theme .va-benefits,
+  body.dta-subpage-theme .va-process,
+  body.dta-subpage-theme .web-showcase,
+  body.dta-subpage-theme .iv-video-section {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  body.dta-subpage-theme .ss-card,
+  body.dta-subpage-theme .ss-benefit-box,
+  body.dta-subpage-theme .va-service-card,
+  body.dta-subpage-theme .va-benefit-box,
+  body.dta-subpage-theme .iv-video-card {
+    min-width: 0;
+    height: auto;
+  }
+  body.dta-subpage-theme .iv-video-grid { grid-template-columns: minmax(0, 1fr); }
+  body.dta-subpage-theme .iv-thumb img { width: 100%; height: 100%; object-fit: cover; }
+  body.dta-subpage-theme .row > * { min-width: 0; }
+  body.dta-subpage-theme h1 { overflow-wrap: anywhere; }
+}
+
+/* ===== Virtual Assistant Process & Hero Contrast Fix ===== */
+body.dta-subpage-theme .va-process {
+  background: linear-gradient(135deg, #21123e, #3d1872) !important;
+  color: #fff !important;
+}
+
+body.dta-subpage-theme .va-process h2,
+body.dta-subpage-theme .va-process h3,
+body.dta-subpage-theme .va-process p,
+body.dta-subpage-theme .va-process .eyebrow {
+  color: #fff !important;
+}
+
+body.dta-subpage-theme .va-process p {
+  color: #cfc4de !important;
+}
+
+/* White card inside process timeline remains clean and readable */
+body.dta-subpage-theme .va-process .col-lg-7 .va-timeline article h3,
+body.dta-subpage-theme .va-process .col-lg-7 .va-timeline article p {
+  color: #211b31 !important;
+}
+/* Fix process sequence numbering color inside purple circles */
+body.dta-subpage-theme .va-timeline article>span {
+  color: #ffffff !important;
+}
+
+/* Fix Website Platforms Section Styling & Contrast */
+body.dta-subpage-theme .web-platforms {
+  background-color: #2b1452 !important;
+  color: #fff !important;
+}
+
+body.dta-subpage-theme .web-platforms h3,
+body.dta-subpage-theme .web-platforms p,
+body.dta-subpage-theme .web-platforms .eyebrow {
+  color: #fff !important;
+}
+
+body.dta-subpage-theme .web-platforms .platform {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+body.dta-subpage-theme .web-platforms .platform strong {
+  color: #fff !important;
+}
+
+body.dta-subpage-theme .web-platforms .platform span {
+  color: #d7caea !important;
+}

@@ -1,0 +1,224 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 650" fill="none">
+  <defs>
+    <linearGradient id="hub" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#A78BFA"/>
+      <stop offset=".5" stop-color="#6D28D9"/>
+      <stop offset="1" stop-color="#241044"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#292044"/>
+      <stop offset="1" stop-color="#080718"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#C4B5FD"/>
+      <stop offset=".5" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="13"/>
+    </filter>
+    <style>
+      .orbit {
+        transform-origin:400px 310px;
+        animation:orbit 32s linear infinite;
+      }
+      .reverse {
+        transform-origin:400px 310px;
+        animation:orbit 38s linear infinite reverse;
+      }
+      .float {
+        animation:float 4s ease-in-out infinite;
+      }
+      .float2 {
+        animation:float 5s ease-in-out infinite 1s;
+      }
+      .float3 {
+        animation:float 4.5s ease-in-out infinite 2s;
+      }
+      .pulse { animation:pulse 3s ease-in-out infinite; }
+      @keyframes orbit { to { transform:rotate(360deg); } }
+      @keyframes float {
+        0%,100% { transform:translateY(0); }
+        50% { transform:translateY(-12px); }
+      }
+      @keyframes pulse {
+        0%,100% { opacity:.5; }
+        50% { opacity:1; }
+      }
+    </style>
+  </defs>
+
+  <!-- Ambient glow -->
+  <ellipse cx="400" cy="510" rx="260" ry="55"
+    fill="#7C3AED" opacity=".18" filter="url(#shadow)"/>
+
+  <!-- Orbital rings -->
+  <g class="pulse">
+    <ellipse cx="400" cy="310" rx="310" ry="190"
+      stroke="url(#ring)" stroke-width="2" opacity=".65"
+      transform="rotate(-15 400 310)"/>
+    <ellipse cx="400" cy="310" rx="280" ry="165"
+      stroke="#A78BFA" stroke-width="1.5"
+      stroke-dasharray="5 9" opacity=".5"
+      transform="rotate(15 400 310)"/>
+  </g>
+
+  <!-- Rotating orbit -->
+  <g class="orbit">
+    <ellipse cx="400" cy="310" rx="250" ry="150"
+      stroke="#8B5CF6" stroke-width="2"
+      opacity=".7" transform="rotate(-20 400 310)"/>
+    <circle cx="150" cy="310" r="5" fill="#A78BFA" filter="url(#glow)"/>
+    <circle cx="650" cy="310" r="5" fill="#38BDF8" filter="url(#glow)"/>
+    <circle cx="400" cy="160" r="5" fill="#A78BFA" filter="url(#glow)"/>
+    <circle cx="400" cy="460" r="5" fill="#38BDF8" filter="url(#glow)"/>
+  </g>
+
+  <!-- Reverse orbit -->
+  <g class="reverse">
+    <ellipse cx="400" cy="310" rx="340" ry="115"
+      stroke="#A78BFA" stroke-width="2"
+      stroke-dasharray="12 12" opacity=".55"/>
+  </g>
+
+  <!-- Central platform -->
+  <g class="float">
+    <path d="M220 335 L400 235 L580 335 L400 435 Z"
+      fill="#7C3AED" opacity=".18"/>
+    <path d="M220 335 L400 435 L580 335 L580 365 L400 468 L220 365Z"
+      fill="#35146E"/>
+    <path d="M220 335 L400 435 L400 468 L220 365Z"
+      fill="#6D28D9"/>
+    <path d="M400 435 L580 335 L580 365 L400 468Z"
+      fill="#241044"/>
+    <path d="M220 335 L400 235 L580 335 L400 435Z"
+      fill="url(#hub)" stroke="#C4B5FD" stroke-width="2"/>
+
+    <!-- Digital screen -->
+    <path d="M310 315 L400 265 L490 315 L400 365Z"
+      fill="url(#screen)" stroke="#A78BFA" stroke-width="2"/>
+    <path d="M310 315 L400 365 L490 315"
+      stroke="#A78BFA" opacity=".6"/>
+    <text x="400" y="318" text-anchor="middle"
+      fill="white" font-size="39" font-weight="bold"
+      font-family="Arial">DTA</text>
+    <path d="M363 330 L437 330" stroke="#A78BFA" stroke-width="2"/>
+    <text x="400" y="345" text-anchor="middle"
+      fill="#DDD6FE" font-size="9" letter-spacing="1.5"
+      font-family="Arial">DIGITAL TECH ASSIST</text>
+  </g>
+
+  <!-- Orbiting service icons -->
+  <g class="orbit">
+
+    <!-- Instagram -->
+    <g transform="translate(400 120)">
+      <rect x="-29" y="-29" width="58" height="58" rx="16"
+        fill="#D946EF" stroke="#F5D0FE" stroke-width="2"/>
+      <rect x="-16" y="-16" width="32" height="32" rx="10"
+        stroke="white" stroke-width="3"/>
+      <circle cx="0" cy="0" r="8" stroke="white" stroke-width="3"/>
+      <circle cx="11" cy="-11" r="2.5" fill="white"/>
+    </g>
+
+    <!-- Facebook -->
+    <g transform="translate(575 190)">
+      <circle r="29" fill="#1877F2" stroke="#BFDBFE" stroke-width="2"/>
+      <path d="M5 -20 H-3 Q-12 -20 -12 -9 V-3 H-19 V7 H-12 V21 H0 V7 H8 L10 -3 H0 V-8 Q0 -11 4 -11 H9 V-20Z"
+        fill="white" transform="scale(.8)"/>
+    </g>
+
+    <!-- WordPress -->
+    <g transform="translate(660 340)">
+      <circle r="29" fill="#21759B" stroke="#BAE6FD" stroke-width="2"/>
+      <text x="0" y="11" text-anchor="middle"
+        fill="white" font-family="Georgia" font-weight="bold"
+        font-size="37">W</text>
+    </g>
+
+    <!-- Shopify -->
+    <g transform="translate(575 455)">
+      <rect x="-27" y="-27" width="54" height="54" rx="13"
+        fill="#84CC16" stroke="#D9F99D" stroke-width="2"/>
+      <path d="M-13 -7 L-9 -16 L9 -16 L13 -7 L11 16 H-11Z"
+        stroke="white" stroke-width="2" fill="none"/>
+      <text x="0" y="10" text-anchor="middle"
+        fill="white" font-size="24" font-weight="bold">S</text>
+    </g>
+
+    <!-- ChatGPT -->
+    <g transform="translate(400 500)">
+      <rect x="-29" y="-29" width="58" height="58" rx="17"
+        fill="#0D9488" stroke="#99F6E4" stroke-width="2"/>
+      <g stroke="white" stroke-width="2.5" fill="none"
+        stroke-linecap="round">
+        <path d="M0 -18 Q13 -18 13 -6 L13 5 Q13 15 2 15"/>
+        <path d="M16 -9 Q23 0 14 8 L4 14 Q-5 19 -11 9"/>
+        <path d="M15 10 Q8 20 -2 13 L-12 7 Q-20 1 -13 -8"/>
+        <path d="M-14 8 Q-24 0 -17 -10 L-7 -16 Q2 -22 9 -12"/>
+        <path d="M-13 -12 Q-12 -23 0 -23 Q10 -23 12 -13"/>
+      </g>
+    </g>
+
+    <!-- Gemini -->
+    <g transform="translate(225 455)">
+      <rect x="-28" y="-28" width="56" height="56" rx="15"
+        fill="#FFFFFF" stroke="#C4B5FD" stroke-width="2"/>
+      <path d="M0 -19 Q4 -4 19 0 Q4 4 0 19 Q-4 4 -19 0 Q-4 -4 0 -19Z"
+        fill="#8B5CF6"/>
+      <path d="M0 -19 Q4 -4 19 0 L0 0Z" fill="#38BDF8"/>
+      <path d="M0 0 L0 19 Q-4 4 -19 0Z" fill="#A78BFA"/>
+    </g>
+
+    <!-- Blogger -->
+    <g transform="translate(140 340)">
+      <rect x="-29" y="-29" width="58" height="58" rx="16"
+        fill="#F97316" stroke="#FED7AA" stroke-width="2"/>
+      <path d="M-12 -14 H0 Q9 -14 9 -4 H13 Q17 -4 17 2 V10 Q17 15 11 15 H-10 Q-15 15 -15 9 V-10 Q-15 -14 -12 -14Z"
+        fill="white"/>
+      <path d="M-7 -6 H2 M-7 6 H7"
+        stroke="#F97316" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Wix -->
+    <g transform="translate(225 190)">
+      <rect x="-29" y="-29" width="58" height="58" rx="15"
+        fill="white" stroke="#C4B5FD" stroke-width="2"/>
+      <text x="0" y="7" text-anchor="middle"
+        fill="#211A35" font-size="19" font-weight="bold"
+        font-family="Arial">Wix</text>
+    </g>
+  </g>
+
+  <!-- Floating additional icons -->
+  <g class="float2">
+    <!-- YouTube -->
+    <rect x="495" y="70" width="57" height="40" rx="12"
+      fill="#EF4444" stroke="#FECACA" stroke-width="2"/>
+    <path d="M518 80 L518 101 L536 90Z" fill="white"/>
+  </g>
+
+  <g class="float3">
+    <!-- Web development -->
+    <rect x="90" y="220" width="60" height="60" rx="16"
+      fill="#292044" stroke="#A78BFA" stroke-width="2"/>
+    <path d="M111 240 L101 250 L111 260 M129 240 L139 250 L129 260"
+      stroke="white" stroke-width="3" stroke-linecap="round"/>
+    <path d="M123 236 L117 264" stroke="#C4B5FD" stroke-width="3"/>
+  </g>
+
+  <!-- Decorative particles -->
+  <g fill="#8B5CF6" class="pulse">
+    <circle cx="110" cy="120" r="4"/>
+    <circle cx="690" cy="160" r="4"/>
+    <circle cx="710" cy="490" r="3"/>
+    <circle cx="100" cy="490" r="3"/>
+    <circle cx="320" cy="65" r="3"/>
+    <circle cx="500" cy="560" r="3"/>
+  </g>
+</svg>

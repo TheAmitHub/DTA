@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" width="100%" height="100%">
+  <defs>
+    <!-- Background Slate -->
+    <linearGradient id="blogBgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#161224"/>
+      <stop offset="100%" stop-color="#0c0816"/>
+    </linearGradient>
+
+    <!-- Deep Purple Ambient Glow -->
+    <filter id="blogGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#8b5cf6" flood-opacity="0.36"/>
+    </filter>
+
+    <!-- Screen Outline Gradient -->
+    <linearGradient id="blogBorder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Dark Slate -->
+  <rect width="760" height="480" rx="28" fill="url(#blogBgGrad)"/>
+  <rect width="760" height="480" rx="28" fill="none" stroke="#2a203b" stroke-width="2"/>
+
+  <!-- ================= LEFT COLUMN: PUBLISHING PLATFORMS ================= -->
+  <g filter="url(#blogGlow)">
+    <!-- 1. YOUTUBE VIDEO BLOGGING -->
+    <g transform="translate(42, 65)">
+      <rect width="175" height="74" rx="18" fill="#140f21" stroke="#3b2b54" stroke-width="1.5"/>
+      <rect x="18" y="19" width="36" height="36" rx="10" fill="#ff0000" fill-opacity="0.2" stroke="#ff0000" stroke-width="1.5"/>
+      <!-- YouTube Play Icon -->
+      <polygon points="32,31 43,37 32,43" fill="#ff4d4d"/>
+      <text x="68" y="36" fill="#ffffff" font-size="12" font-weight="700" font-family="system-ui, sans-serif">YouTube</text>
+      <text x="68" y="50" fill="#f87171" font-size="10" font-weight="600" font-family="system-ui, sans-serif">Video Insights &amp; Pod</text>
+    </g>
+
+    <!-- 2. MEDIUM PUBLICATION -->
+    <g transform="translate(42, 150)">
+      <rect width="175" height="74" rx="18" fill="#140f21" stroke="#3b2b54" stroke-width="1.5"/>
+      <rect x="18" y="19" width="36" height="36" rx="10" fill="#2d1747" stroke="#ffffff" stroke-width="1.5"/>
+      <!-- Medium "M" Icon -->
+      <text x="36" y="44" fill="#ffffff" font-size="20" font-weight="900" font-family="Georgia, serif" text-anchor="middle">M</text>
+      <text x="68" y="36" fill="#ffffff" font-size="12" font-weight="700" font-family="system-ui, sans-serif">Medium</text>
+      <text x="68" y="50" fill="#c084fc" font-size="10" font-weight="600" font-family="system-ui, sans-serif">Articles &amp; Stories</text>
+    </g>
+
+    <!-- 3. BLOGGER / GOOGLE BLOGS -->
+    <g transform="translate(42, 235)">
+      <rect width="175" height="74" rx="18" fill="#140f21" stroke="#3b2b54" stroke-width="1.5"/>
+      <rect x="18" y="19" width="36" height="36" rx="10" fill="#f97316" fill-opacity="0.2" stroke="#f97316" stroke-width="1.5"/>
+      <!-- Blogger "B" Icon -->
+      <text x="36" y="44" fill="#fb923c" font-size="19" font-weight="900" font-family="system-ui, sans-serif" text-anchor="middle">B</text>
+      <text x="68" y="36" fill="#ffffff" font-size="12" font-weight="700" font-family="system-ui, sans-serif">Blogger</text>
+      <text x="68" y="50" fill="#fb923c" font-size="10" font-weight="600" font-family="system-ui, sans-serif">Local CMS Feeds</text>
+    </g>
+
+    <!-- 4. EDITORIAL NEWSLETTER -->
+    <g transform="translate(42, 320)">
+      <rect width="175" height="74" rx="18" fill="#140f21" stroke="#3b2b54" stroke-width="1.5"/>
+      <rect x="18" y="19" width="36" height="36" rx="10" fill="#1f1833" stroke="#a855f7" stroke-width="1.5"/>
+      <!-- Mail Newsletter Icon -->
+      <rect x="26" y="29" width="20" height="14" rx="2" fill="none" stroke="#a855f7" stroke-width="1.5"/>
+      <path d="M26 31 L36 38 L46 31" fill="none" stroke="#c084fc" stroke-width="1.4"/>
+      <text x="68" y="36" fill="#ffffff" font-size="12" font-weight="700" font-family="system-ui, sans-serif">Newsletter</text>
+      <text x="68" y="50" fill="#a855f7" font-size="10" font-weight="600" font-family="system-ui, sans-serif">Subscriber Base</text>
+    </g>
+  </g>
+
+  <!-- ================= CENTER: MAIN EDITORIAL & BLOG SCREEN ================= -->
+  <g filter="url(#blogGlow)">
+    <!-- Screen Frame -->
+    <rect x="250" y="65" width="260" height="175" rx="16" fill="#110d1a" stroke="url(#blogBorder)" stroke-width="2.2"/>
+    
+    <!-- Top Browser Header -->
+    <rect x="250" y="65" width="260" height="24" rx="16" fill="#1b1429"/>
+    <circle cx="268" cy="77" r="3.5" fill="#ec4899"/>
+    <circle cx="279" cy="77" r="3.5" fill="#a855f7"/>
+    <circle cx="290" cy="77" r="3.5" fill="#6d28d9"/>
+    <rect x="305" y="72" width="130" height="9" rx="4.5" fill="#0f0b18"/>
+
+    <!-- Featured Blog Article inside Laptop -->
+    <rect x="270" y="102" width="135" height="8" rx="4" fill="#a855f7"/>
+    <rect x="270" y="116" width="120" height="4" rx="2" fill="#584277"/>
+    <rect x="270" y="125" width="95" height="4" rx="2" fill="#3b2b52"/>
+
+    <!-- Right Featured Article Card / Image -->
+    <rect x="415" y="102" width="78" height="58" rx="10" fill="#1d152c" stroke="#4a3568" stroke-width="1"/>
+    <!-- Video Player Preview on Blog -->
+    <circle cx="454" cy="126" r="11" fill="#ff0000" fill-opacity="0.85"/>
+    <polygon points="452,122 459,126 452,130" fill="#ffffff"/>
+    <rect x="428" y="146" width="52" height="4" rx="2" fill="#a855f7"/>
+
+    <!-- Mini Bottom Grid Posts -->
+    <rect x="270" y="172" width="65" height="50" rx="8" fill="#171024" stroke="#2d2042" stroke-width="1"/>
+    <rect x="345" y="172" width="65" height="50" rx="8" fill="#171024" stroke="#2d2042" stroke-width="1"/>
+    <rect x="420" y="172" width="73" height="50" rx="8" fill="#171024" stroke="#2d2042" stroke-width="1"/>
+
+    <!-- Laptop Bottom Base -->
+    <path d="M215 240 L545 240 L520 258 L240 258 Z" fill="#1d152c" stroke="#3b2b54" stroke-width="1.5"/>
+    <rect x="350" y="243" width="60" height="4" rx="2" fill="#553d75"/>
+
+    <!-- Reader Engagement / Views Tag -->
+    <g transform="translate(260, 275)">
+      <rect width="240" height="62" rx="16" fill="#140f21" stroke="#3b2b54" stroke-width="1.5"/>
+      <circle cx="32" cy="31" r="14" fill="#24153d" stroke="#8b5cf6" stroke-width="1.5"/>
+      <!-- Eye Icon -->
+      <path d="M25 31 C27 27 37 27 39 31 C37 35 27 35 25 31 Z" fill="none" stroke="#c084fc" stroke-width="1.6"/>
+      <circle cx="32" cy="31" r="2.5" fill="#c084fc"/>
+      <text x="56" y="27" fill="#f3e8ff" font-size="12" font-weight="700" font-family="system-ui, sans-serif">50K+ Monthly Readers</text>
+      <text x="56" y="43" fill="#a855f7" font-size="10" font-weight="600" font-family="system-ui, sans-serif">Engaging Tech &amp; Agency Case Studies</text>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: CONTENT PUBLISHING CHECKLIST ================= -->
+  <g filter="url(#blogGlow)">
+    <!-- DTA Digital Hub Capsule Widget -->
+    <g transform="translate(545, 65)">
+      <rect width="172" height="150" rx="18" fill="#140f21" stroke="#3b2b54" stroke-width="1.5"/>
+      <circle cx="86" cy="65" r="32" fill="#24153d" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="86" y="70" fill="#c084fc" font-size="13" font-weight="900" font-family="system-ui, sans-serif" text-anchor="middle">DTA</text>
+      <text x="86" y="82" fill="#a855f7" font-size="8" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">HUB</text>
+      <text x="86" y="125" fill="#f3e8ff" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Omnichannel Media</text>
+    </g>
+
+    <!-- Checklist: Plan, Create, Publish, Distribute -->
+    <g transform="translate(545, 230)">
+      <rect width="172" height="164" rx="18" fill="#140f21" stroke="#3b2b54" stroke-width="1.5"/>
+      <text x="24" y="32" fill="#c084fc" font-size="12" font-weight="800" font-family="system-ui, sans-serif">EDITORIAL FLOW</text>
+
+      <!-- Step 1: Research -->
+      <circle cx="34" cy="56" r="6" fill="#231636" stroke="#10b981" stroke-width="1.5"/>
+      <path d="M31 56 L33 58 L37 54" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="50" y="60" fill="#f3e8ff" font-size="11" font-weight="600" font-family="system-ui, sans-serif">Topic Research</text>
+
+      <!-- Step 2: Write -->
+      <circle cx="34" cy="84" r="6" fill="#231636" stroke="#10b981" stroke-width="1.5"/>
+      <path d="M31 84 L33 86 L37 82" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="50" y="88" fill="#f3e8ff" font-size="11" font-weight="600" font-family="system-ui, sans-serif">Draft &amp; Visuals</text>
+
+      <!-- Step 3: Multi-Post -->
+      <circle cx="34" cy="112" r="6" fill="#231636" stroke="#10b981" stroke-width="1.5"/>
+      <path d="M31 112 L33 114 L37 110" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="50" y="116" fill="#f3e8ff" font-size="11" font-weight="600" font-family="system-ui, sans-serif">Cross-Publish</text>
+
+      <!-- Step 4: Scale -->
+      <circle cx="34" cy="140" r="6" fill="#231636" stroke="#8b5cf6" stroke-width="1.5"/>
+      <path d="M31 140 L33 142 L37 138" fill="none" stroke="#a855f7" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="50" y="144" fill="#c084fc" font-size="11" font-weight="600" font-family="system-ui, sans-serif">Engage Audience</text>
+    </g>
+  </g>
+</svg>

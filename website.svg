@@ -1,0 +1,170 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 560" fill="none">
+<defs>
+  <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#C084FC"/><stop offset="1" stop-color="#6B21A8"/>
+  </linearGradient>
+  <linearGradient id="deep" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#9333EA"/><stop offset="1" stop-color="#4C1D95"/>
+  </linearGradient>
+  <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#F0E7FF"/>
+  </linearGradient>
+  <filter id="shadow" x="-40%" y="-40%" width="180%" height="190%">
+    <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#55218A" flood-opacity=".18"/>
+  </filter>
+  <filter id="glow"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+
+<!-- Background -->
+<ellipse cx="340" cy="280" rx="250" ry="205" fill="#DCC5FF" opacity=".38" filter="url(#glow)"/>
+<circle cx="340" cy="275" r="215" stroke="#C4A3F5" stroke-dasharray="5 10" opacity=".7"/>
+
+<!-- Orbit dots -->
+<g fill="#9333EA">
+  <circle cx="105" cy="145" r="5"/>
+  <circle cx="570" cy="145" r="5"/>
+  <circle cx="575" cy="390" r="6"/>
+  <circle cx="105" cy="390" r="4"/>
+  <circle cx="340" cy="55" r="4"/>
+</g>
+
+<!-- Central website workspace -->
+<g class="workspace" filter="url(#shadow)">
+  <rect x="205" y="145" width="270" height="260" rx="24" fill="#2E1065"/>
+  <rect x="216" y="156" width="248" height="238" rx="16" fill="url(#paper)"/>
+
+  <!-- Browser header -->
+  <rect x="216" y="156" width="248" height="38" rx="14" fill="url(#deep)"/>
+  <circle cx="235" cy="175" r="5" fill="#FCA5A5"/>
+  <circle cx="251" cy="175" r="5" fill="#FDE68A"/>
+  <circle cx="267" cy="175" r="5" fill="#86EFAC"/>
+  <rect x="296" y="168" width="120" height="13" rx="6.5" fill="#FFFFFF" opacity=".18"/>
+
+  <!-- Website preview -->
+  <rect x="232" y="208" width="216" height="168" rx="10" fill="white"/>
+
+  <!-- Website hero -->
+  <rect x="232" y="208" width="216" height="67" rx="9" fill="#F1E8FF"/>
+  <rect x="247" y="223" width="75" height="7" rx="3.5" fill="#7E22CE"/>
+  <rect x="247" y="238" width="105" height="5" rx="2.5" fill="#C4B5FD"/>
+  <rect x="247" y="249" width="85" height="5" rx="2.5" fill="#DDD0F5"/>
+  <rect x="247" y="260" width="46" height="10" rx="5" fill="url(#purple)"/>
+  <rect x="362" y="218" width="68" height="46" rx="9" fill="#D8B4FE"/>
+  <circle cx="396" cy="240" r="15" fill="#A855F7" opacity=".7"/>
+
+  <!-- Website content cards -->
+  <g>
+    <rect x="247" y="288" width="56" height="67" rx="7" fill="#F3E8FF"/>
+    <rect x="311" y="288" width="56" height="67" rx="7" fill="#F3E8FF"/>
+    <rect x="375" y="288" width="56" height="67" rx="7" fill="#F3E8FF"/>
+    <rect x="255" y="297" width="40" height="25" rx="4" fill="#C084FC"/>
+    <rect x="319" y="297" width="40" height="25" rx="4" fill="#A78BFA"/>
+    <rect x="383" y="297" width="40" height="25" rx="4" fill="#C084FC"/>
+    <rect x="255" y="329" width="34" height="4" rx="2" fill="#A78BFA"/>
+    <rect x="319" y="329" width="34" height="4" rx="2" fill="#A78BFA"/>
+    <rect x="383" y="329" width="34" height="4" rx="2" fill="#A78BFA"/>
+    <rect x="255" y="339" width="26" height="4" rx="2" fill="#DDD0F5"/>
+    <rect x="319" y="339" width="26" height="4" rx="2" fill="#DDD0F5"/>
+    <rect x="383" y="339" width="26" height="4" rx="2" fill="#DDD0F5"/>
+  </g>
+</g>
+
+<!-- Laptop base -->
+<g filter="url(#shadow)">
+  <path d="M190 405H490L512 425Q515 434 497 436H183Q165 434 168 425L190 405Z" fill="url(#deep)"/>
+  <path d="M190 405H490L503 423H177Z" fill="#A855F7"/>
+  <path d="M285 410H395L384 418H296Z" fill="#E9D5FF" opacity=".8"/>
+</g>
+
+<!-- WordPress card -->
+<g class="wordpress" filter="url(#shadow)">
+  <rect x="20" y="65" width="190" height="115" rx="19" fill="white"/>
+  <circle cx="58" cy="105" r="23" fill="#E0F2FE"/>
+  <circle cx="58" cy="105" r="17" stroke="#21759B" stroke-width="3"/>
+  <path d="M49 95L57 116L64 96M64 96L70 116" stroke="#21759B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="94" y="100" font-size="12" font-weight="700" fill="#4C1D95">WORDPRESS</text>
+  <text x="94" y="116" font-size="10" fill="#7E22CE">CMS Websites</text>
+  <rect x="43" y="145" width="145" height="6" rx="3" fill="#C4B5FD"/>
+  <rect x="43" y="158" width="105" height="6" rx="3" fill="#E9D5FF"/>
+</g>
+
+<!-- Wix card -->
+<g class="wix" filter="url(#shadow)">
+  <rect x="470" y="65" width="190" height="115" rx="19" fill="white"/>
+  <circle cx="508" cy="105" r="23" fill="#F3E8FF"/>
+  <text x="508" y="113" text-anchor="middle" font-size="22" font-weight="900" fill="#7C3AED">W</text>
+  <text x="545" y="100" font-size="12" font-weight="700" fill="#4C1D95">WIX</text>
+  <text x="545" y="116" font-size="10" fill="#7E22CE">Easy Website Builder</text>
+  <rect x="493" y="145" width="145" height="6" rx="3" fill="#C4B5FD"/>
+  <rect x="493" y="158" width="105" height="6" rx="3" fill="#E9D5FF"/>
+</g>
+
+<!-- Shopify card -->
+<g class="shopify" filter="url(#shadow)">
+  <rect x="20" y="250" width="190" height="115" rx="19" fill="white"/>
+  <circle cx="59" cy="290" r="23" fill="#ECFCCB"/>
+  <path d="M48 279L70 279L74 306H45Z" fill="#65A30D"/>
+  <path d="M53 281Q53 270 61 270Q69 270 69 281" stroke="#365314" stroke-width="3" fill="none"/>
+  <path d="M54 290L59 295L68 285" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <text x="92" y="285" font-size="12" font-weight="700" fill="#4C1D95">SHOPIFY</text>
+  <text x="92" y="301" font-size="10" fill="#7E22CE">Online Stores</text>
+  <rect x="43" y="330" width="145" height="6" rx="3" fill="#C4B5FD"/>
+  <rect x="43" y="343" width="105" height="6" rx="3" fill="#E9D5FF"/>
+</g>
+
+<!-- Core development card -->
+<g class="core" filter="url(#shadow)">
+  <rect x="470" y="250" width="190" height="115" rx="19" fill="white"/>
+  <circle cx="509" cy="290" r="23" fill="#F3E8FF"/>
+  <path d="M500 280L489 290L500 300M518 280L529 290L518 300M513 276L505 304" stroke="#7E22CE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="545" y="285" font-size="12" font-weight="700" fill="#4C1D95">CORE</text>
+  <text x="545" y="301" font-size="12" font-weight="700" fill="#4C1D95">DEVELOPMENT</text>
+  <rect x="493" y="330" width="145" height="6" rx="3" fill="#C4B5FD"/>
+  <rect x="493" y="343" width="105" height="6" rx="3" fill="#E9D5FF"/>
+</g>
+
+<!-- Code editor floating card -->
+<g class="code" filter="url(#shadow)">
+  <rect x="245" y="455" width="190" height="85" rx="18" fill="white"/>
+  <rect x="260" y="470" width="160" height="55" rx="9" fill="#2E1065"/>
+  <circle cx="273" cy="482" r="3" fill="#FCA5A5"/>
+  <circle cx="283" cy="482" r="3" fill="#FDE68A"/>
+  <circle cx="293" cy="482" r="3" fill="#86EFAC"/>
+  <path d="M275 501L284 509L275 517M300 517L310 501" stroke="#C084FC" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="318" y="502" width="65" height="5" rx="2.5" fill="#C084FC"/>
+  <rect x="318" y="513" width="48" height="5" rx="2.5" fill="#8B5CF6"/>
+</g>
+
+<!-- Floating design tool -->
+<g class="design" filter="url(#shadow)">
+  <circle cx="560" cy="410" r="29" fill="url(#purple)"/>
+  <path d="M548 411L558 401L572 415L562 425Z" fill="white"/>
+  <path d="M558 401L565 394L579 408L572 415Z" fill="#E9D5FF"/>
+</g>
+
+<!-- Sparkles -->
+<g fill="#9333EA">
+  <path d="M275 55L281 73L299 79L281 85L275 103L269 85L251 79L269 73Z"/>
+  <path d="M570 200L575 214L589 219L575 224L570 238L565 224L551 219L565 214Z"/>
+  <path d="M115 420L120 434L134 439L120 444L115 458L110 444L96 439L110 434Z"/>
+</g>
+
+<style>
+.workspace { animation: mainFloat 4.5s ease-in-out infinite; transform-origin:center; }
+.wordpress { animation: float 4s ease-in-out infinite -1s; }
+.wix { animation: float 4.5s ease-in-out infinite -2s; }
+.shopify { animation: float 4.2s ease-in-out infinite -1.5s; }
+.core { animation: float 4.5s ease-in-out infinite -.5s; }
+.code { animation: float 4s ease-in-out infinite -2.5s; }
+.design { animation: float 4.5s ease-in-out infinite -1.8s; }
+@keyframes mainFloat {
+  0%,100% { transform:translateY(0); }
+  50% { transform:translateY(-7px); }
+}
+@keyframes float {
+  0%,100% { transform:translateY(0); }
+  50% { transform:translateY(-10px); }
+}
+</style>
+</svg>
